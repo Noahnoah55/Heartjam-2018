@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/dodge_or_hit.wav-720a8fa259f22a3be9e3e712644a1d85.sample"
+
+[deps]
+
+source_file="res://Assets/Sounds/dodge_or_hit.wav"
+source_md5="ddb1aed77b159878130d9705cb80a6a4"
+
+dest_files=[ "res://.import/dodge_or_hit.wav-720a8fa259f22a3be9e3e712644a1d85.sample" ]
+dest_md5="293150bb90d57b5c32cb5fea3a1f4ed2"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
