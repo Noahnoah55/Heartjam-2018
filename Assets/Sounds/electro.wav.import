@@ -7,10 +7,10 @@ path="res://.import/electro.wav-686c8fa09e620e63e0d48dc020e6efe4.sample"
 [deps]
 
 source_file="res://Assets/Sounds/electro.wav"
-source_md5="157eb024c29eff894707922f03aa7b80"
+source_md5="2e42bab6cdbc859bc025b901edab0212"
 
 dest_files=[ "res://.import/electro.wav-686c8fa09e620e63e0d48dc020e6efe4.sample" ]
-dest_md5="2a0bc6d3cc235417bd1c1b2ebf8edbca"
+dest_md5="ddb5cef17d585be043ab2ac52bbda6b6"
 
 [params]
 
