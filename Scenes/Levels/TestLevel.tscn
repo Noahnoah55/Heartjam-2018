@@ -3,7 +3,7 @@
 [ext_resource path="res://Scenes/GameParts/LevelBlocks.tres" type="TileSet" id=1]
 [ext_resource path="res://Scenes/GameParts/Player.tscn" type="PackedScene" id=2]
 
-[node name="Node2D" type="Node2D" index="0"]
+[node name="Node2D" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="." index="0"]
 
@@ -29,5 +29,9 @@ _sections_unfolded = [ "Cell" ]
 [node name="Player" parent="." index="1" instance=ExtResource( 2 )]
 
 position = Vector2( 399.31, 365.397 )
+upbutton = "ui_up"
+downbutton = "ui_up"
+leftbutton = "ui_up"
+rightbutton = "ui_up"
 
 

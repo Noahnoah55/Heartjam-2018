@@ -20,6 +20,7 @@ func _process(delta):
 	for i in $Area2D.get_overlapping_bodies():
 		if i.is_in_group('Block'):
 			velocity.y = 0
-	if Input.is_action_just_pressed(upbutton):
-		
+	if Input.is_action_just_pressed('ui_up'):
+		velocity.y = jumpforce
+		Label.Text = 'jump'
 	move_and_slide(velocity)
