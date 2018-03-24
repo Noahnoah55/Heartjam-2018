@@ -2,14 +2,14 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/robotdeath12.png-9fac36507e7834236c91c0c72dfd4673.stex"
+path="res://.import/robotdeath12.png-9fcccb47721de31926136a7dd822acb7.stex"
 
 [deps]
 
-source_file="res://Assets/Sprites/RoboDeath/robotdeath12.png"
+source_file="res://Assets/Sprites/Robo/RoboDeath/robotdeath12.png"
 source_md5="4d100ba2b378cecdee44092281c4330b"
 
-dest_files=[ "res://.import/robotdeath12.png-9fac36507e7834236c91c0c72dfd4673.stex" ]
+dest_files=[ "res://.import/robotdeath12.png-9fcccb47721de31926136a7dd822acb7.stex" ]
 dest_md5="b95d22ae672417e64224bd4b3eafa36d"
 
 [params]

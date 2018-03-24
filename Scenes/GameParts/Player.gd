@@ -29,6 +29,7 @@ var c
 var stun
 export var playernumber = '1'
 var firing = 0
+var jumping = 0
 
 func _ready():
 	level = get_node('/root/Level')
@@ -89,6 +90,12 @@ func _process(delta):
 		if d[i].is_in_group('Bullet'):
 			if d[i].is_in_group(playernumber) == false:
 				hit()
+		if d[i].is_in_group('Bottle'):
+			if d[i].is_in_group('Big'):
+				$ThirstBar.fillbar(2)
+			if d[i].is_in_group('Small'):
+				$ThirstBar.fillbar(1)
+			d[i].queue_free()
 	
 	#CONTROLS
 	if not stun:
@@ -100,6 +107,7 @@ func _process(delta):
 			if Input.is_action_just_pressed(jumpbutton):
 				if jumpsleft > 0:
 					velocity.y = -jumpforce
+					$tempchar.play('JUMPING')
 					if isonground == false:
 						jumpsleft -= 1
 			if Input.is_action_pressed(leftbutton):
@@ -124,6 +132,8 @@ func _process(delta):
 		pass
 	elif firing == 1:
 		pass
+	elif jumping == 1:
+		pass
 	else:
 		if lastx == -1:
 			$tempchar.set_flip_h(true)
@@ -134,6 +144,8 @@ func _process(delta):
 				$tempchar.play('RUNNING')
 			else:
 				$tempchar.play ('IDLE')
+		else:
+			$tempchar.play('MIDAIR')
 	velocity.x = direction.x * walkspeed
 	prepos = position
 	if not dead:
@@ -154,3 +166,5 @@ func _on_tempchar_animation_finished():
 		queue_free()
 	if $tempchar.animation == 'FIRING':
 		firing = 0
+	if $tempchar.animation == 'JUMPING':
+		jumping = 0

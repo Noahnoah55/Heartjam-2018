@@ -2,14 +2,14 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/robotidle1.png-beec6908b6460fe356fdb4b56bc07e89.stex"
+path="res://.import/robotidle1.png-7e1b669fbaf451b331bab065db60550b.stex"
 
 [deps]
 
-source_file="res://Assets/Sprites/RoboIdle/robotidle1.png"
+source_file="res://Assets/Sprites/Robo/RoboIdle/robotidle1.png"
 source_md5="d5046c3c49b9002ddfcbfb8c8bdc7713"
 
-dest_files=[ "res://.import/robotidle1.png-beec6908b6460fe356fdb4b56bc07e89.stex" ]
+dest_files=[ "res://.import/robotidle1.png-7e1b669fbaf451b331bab065db60550b.stex" ]
 dest_md5="b54cb23688b5967fa1475b656841da7e"
 
 [params]
