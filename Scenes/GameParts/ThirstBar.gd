@@ -21,6 +21,7 @@ func drawbars():
 	$Bar3.draw(currentbar, barvalue)
 	$Bar4.draw(currentbar, barvalue)
 	$Bar5.draw(currentbar, barvalue)
+
 func drainbar():
 	barvalue -= 1
 	if barvalue < 0:
@@ -42,4 +43,3 @@ func _process(delta):
 		timesince -= 1
 		drainbar()
 	drawbars()
-	$Label.text = String(currentbar) + String (barvalue)
