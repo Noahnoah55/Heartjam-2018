@@ -1,4 +1,5 @@
 extends Area2D
+var c
 var velocity = Vector2()
 var facing = Vector2()
 export var speed = 800
@@ -16,3 +17,9 @@ func _process(delta):
 #	# Update game logic here.
 	position += velocity * delta
 	$Label.text = String(get_groups())
+
+	c = get_overlapping_bodies()
+	for i in range(0, c.size()):
+		if c[i].is_in_group('Player'):
+			queue_free()
+		
