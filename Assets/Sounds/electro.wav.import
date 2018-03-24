@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/electro.wav-686c8fa09e620e63e0d48dc020e6efe4.sample"
+
+[deps]
+
+source_file="res://Assets/Sounds/electro.wav"
+source_md5="157eb024c29eff894707922f03aa7b80"
+
+dest_files=[ "res://.import/electro.wav-686c8fa09e620e63e0d48dc020e6efe4.sample" ]
+dest_md5="2a0bc6d3cc235417bd1c1b2ebf8edbca"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
