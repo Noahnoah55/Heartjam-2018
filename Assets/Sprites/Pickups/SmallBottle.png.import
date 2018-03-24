@@ -10,7 +10,7 @@ source_file="res://Assets/Sprites/Pickups/SmallBottle.png"
 source_md5="8a1778dd59bd8d967c56e2d18f3c17de"
 
 dest_files=[ "res://.import/SmallBottle.png-02dd477d2c7c1d1fe8e9a9c0be79351e.stex" ]
-dest_md5="d96449a13682a664ce8adfb28f79d90e"
+dest_md5="450fc335301fff8b4866d90f4376497e"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

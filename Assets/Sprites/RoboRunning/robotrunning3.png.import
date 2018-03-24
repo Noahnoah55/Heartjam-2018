@@ -10,7 +10,7 @@ source_file="res://Assets/Sprites/RoboRunning/robotrunning3.png"
 source_md5="03ca8093c5b8c182cce60120c4e5b5de"
 
 dest_files=[ "res://.import/robotrunning3.png-d622a3503ba4fe0e33e2ac88061c3b13.stex" ]
-dest_md5="0b57f4ba7fdde73b246c9da87b75c7e4"
+dest_md5="cf5f9de5aec70437ac194e1f3d41120b"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

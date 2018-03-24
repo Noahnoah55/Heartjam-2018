@@ -10,7 +10,7 @@ source_file="res://Assets/Sprites/RoboFiring/robotfiring1.png"
 source_md5="6b1f803c402c172a155ffa8cc33e9815"
 
 dest_files=[ "res://.import/robotfiring1.png-16b141fbf5cd55566a6709e7f05c7c62.stex" ]
-dest_md5="1c74148ec1105cd2c1ac73c4e5ef66a8"
+dest_md5="b3520316a38dfd43da55b4927c70f634"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

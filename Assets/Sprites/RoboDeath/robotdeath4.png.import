@@ -10,7 +10,7 @@ source_file="res://Assets/Sprites/RoboDeath/robotdeath4.png"
 source_md5="82a63829ee6f44f8804cdfe34b7d2ff6"
 
 dest_files=[ "res://.import/robotdeath4.png-1014c775f811bb649c2b9152dac57dea.stex" ]
-dest_md5="c54d752737e3ae7389296de3d396c0f1"
+dest_md5="332cc18f2dc1374b104e893db14da411"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
