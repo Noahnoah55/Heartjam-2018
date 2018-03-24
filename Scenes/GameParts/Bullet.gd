@@ -1,7 +1,7 @@
 extends Area2D
 var velocity = Vector2()
 var facing = Vector2()
-export var speed = 400
+export var speed = 800
 # class member variables go here, for example:
 # var a = 2
 # var b = "textvar"
