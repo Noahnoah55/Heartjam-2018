@@ -2,14 +2,14 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/robotrunning2.png-9a51374e7c61465c8b8dbb1dcea20b4a.stex"
+path="res://.import/robotrunning2.png-0b97363d253d95b826bd4657c1390bdc.stex"
 
 [deps]
 
-source_file="res://Assets/Sprites/RoboRunning/robotrunning2.png"
+source_file="res://Assets/Sprites/Robo/RoboRunning/robotrunning2.png"
 source_md5="0b7c62966577d74b04ea96d8bdfaa630"
 
-dest_files=[ "res://.import/robotrunning2.png-9a51374e7c61465c8b8dbb1dcea20b4a.stex" ]
+dest_files=[ "res://.import/robotrunning2.png-0b97363d253d95b826bd4657c1390bdc.stex" ]
 dest_md5="d59da9921d8014c6d9be63ac4af20d94"
 
 [params]
