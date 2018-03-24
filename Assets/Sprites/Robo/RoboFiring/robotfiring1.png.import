@@ -2,14 +2,14 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/robotfiring1.png-16b141fbf5cd55566a6709e7f05c7c62.stex"
+path="res://.import/robotfiring1.png-fe10fa636c9ef0e12754a4d7ca9bc7d6.stex"
 
 [deps]
 
-source_file="res://Assets/Sprites/RoboFiring/robotfiring1.png"
+source_file="res://Assets/Sprites/Robo/RoboFiring/robotfiring1.png"
 source_md5="6b1f803c402c172a155ffa8cc33e9815"
 
-dest_files=[ "res://.import/robotfiring1.png-16b141fbf5cd55566a6709e7f05c7c62.stex" ]
+dest_files=[ "res://.import/robotfiring1.png-fe10fa636c9ef0e12754a4d7ca9bc7d6.stex" ]
 dest_md5="b3520316a38dfd43da55b4927c70f634"
 
 [params]

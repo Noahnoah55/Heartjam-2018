@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/Levels/TestLevel.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/GameParts/LevelBlocks.tres" type="TileSet" id=2]
 [ext_resource path="res://Scenes/GameParts/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/GameParts/BigBottle.tscn" type="PackedScene" id=4]
 
 [node name="Level" type="Node2D"]
 
@@ -46,5 +47,9 @@ position = Vector2( 266.714, 367.853 )
 
 position = Vector2( 552.482, 324.122 )
 playernumber = "2"
+
+[node name="BigBottle" parent="." index="3" instance=ExtResource( 4 )]
+
+position = Vector2( 769.794, 503.374 )
 
 
