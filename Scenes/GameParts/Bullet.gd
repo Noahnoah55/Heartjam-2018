@@ -1,4 +1,4 @@
-extends KinematicBody2D
+extends Area2D
 var velocity = Vector2()
 var facing = Vector2()
 export var speed = 400
@@ -14,5 +14,5 @@ func _ready():
 func _process(delta):
 #	# Called every frame. Delta is time since last frame.
 #	# Update game logic here.
-	if move_and_collide(velocity * delta):
-		queue_free()
+	position += velocity * delta
+	$Label.text = String(get_groups())
