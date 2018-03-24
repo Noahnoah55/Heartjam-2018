@@ -52,6 +52,7 @@ func squirt():
 	new_bullet.facing = facing
 	new_bullet.add_to_group(playernumber)
 	level.add_child(new_bullet)
+	$ThirstBar.bigdrain()
 
 func die():
 	dead = true
