@@ -7,8 +7,10 @@ path="res://.import/tempchar.png-f615a0d2be3abff7add1a2bc8138fcaf.stex"
 [deps]
 
 source_file="res://Assets/Temp/tempchar.png"
+source_md5="8fa260fb62bd27792e09a971ab205bc4"
 
 dest_files=[ "res://.import/tempchar.png-f615a0d2be3abff7add1a2bc8138fcaf.stex" ]
+dest_md5="8fdada31fe0ee10a7f1c6ff3c8360a45"
 
 [params]
 
@@ -17,6 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
