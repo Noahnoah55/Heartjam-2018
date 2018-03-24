@@ -28,6 +28,7 @@ upbutton = "ui_up"
 downbutton = "ui_down"
 leftbutton = "ui_left"
 rightbutton = "ui_right"
+fire = "ui_fire"
 debug = true
 
 [node name="tempchar" type="Sprite" parent="." index="0"]

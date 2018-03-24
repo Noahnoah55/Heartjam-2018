@@ -8,19 +8,16 @@ export var upbutton = 'ui_up'
 export var downbutton = 'ui_down'
 export var leftbutton = 'ui_left'
 export var rightbutton = 'ui_right'
+export var fire = 'ui_fire'
 var direction = Vector2()
 var throw = 0
 var b = 0
 var jumpsleft = 2
 var isonground = false
 export var debug = true
-# class member variables go here, for example:
-# var a = 2
-# var b = "textvar"
+var facing = Vector2()
 
 func _ready():
-	# Called every time the node is added to the scene.
-	# Initialization here
 	pass
 
 func _process(delta):
@@ -39,6 +36,7 @@ func _process(delta):
 			jumpsleft -= 1
 	if Input.is_action_pressed(leftbutton):
 		direction.x -= 1
+		facing.x
 	if Input.is_action_pressed(rightbutton):
 		direction.x += 1
 	velocity.x = direction.x * walkspeed
