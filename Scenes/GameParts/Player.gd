@@ -57,6 +57,7 @@ func die():
 
 func drain():
 	$ThirstBbar.drainbar()
+	
 
 func _process(delta):
 	direction = Vector2()
@@ -80,7 +81,7 @@ func _process(delta):
 	for i in range(0, d.size()):
 		if d[i].is_in_group('Bullet'):
 			if d[i].is_in_group(playernumber) == false:
-				hit()
+				drain()
 	if not dead:
 		if Input.is_action_just_pressed(jumpbutton):
 			if jumpsleft > 0:
