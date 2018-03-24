@@ -43,7 +43,7 @@ position = Vector2( 266.714, 367.853 )
 
 [node name="Player2" parent="." index="2" instance=ExtResource( 3 )]
 
-position = Vector2( 552.482, 325.35 )
+position = Vector2( 552.482, 324.122 )
 jumpbutton = "ui_jump2"
 upbutton = "ui_up2"
 downbutton = "ui_down2"

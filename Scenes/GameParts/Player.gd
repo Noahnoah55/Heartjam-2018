@@ -19,16 +19,27 @@ var b = 0
 var jumpsleft = 2
 var isonground = false
 export var debug = true
-var facing = Vector2()
-var lastx = 0
+var facing = Vector2(1,0)
+var lastx = 1
+export (PackedScene) var bullet
+var level
 
 func _ready():
+	level = get_node('/root/Level')
 	jumpforce = get_node('/root/Level').jumpforce
 	walkspeed = get_node('/root/Level').walkspeed
 	aircontrol = get_node('/root/Level').aircontrol
 	jumpbonus = get_node('/root/Level').jumpbonus
 	gravity = get_node('/root/Level').gravity
 	bouncespeed = get_node('/root/Level').bouncespeed
+
+func squirt():
+	var new_bullet = bullet.instance()
+	new_bullet.position = self.position + Vector2(facing.x * 16, facing.y * 16)
+	new_bullet.velocity += velocity * .5
+	new_bullet.facing = facing
+	new_bullet.add_collision_exception_with(self)
+	level.add_child(new_bullet)
 
 func _process(delta):
 	direction = Vector2()
@@ -42,23 +53,25 @@ func _process(delta):
 	for i in range(0, b.size()):
 		if b[i].is_in_group('Block'):
 			velocity.y = 0
-			jumpsleft = 2
+			jumpsleft = 1
 			isonground = true
 		if b[i].is_in_group('Player'):
 			if b[i] != self:
 				velocity.y = -bouncespeed
+				jumpsleft = 1
 			
 	if Input.is_action_just_pressed(jumpbutton):
 		if jumpsleft > 0:
 			velocity.y = -jumpforce
-			jumpsleft -= 1
+			if isonground == false:
+				jumpsleft -= 1
 	if Input.is_action_pressed(leftbutton):
 		direction.x -= 1
 		facing.x = -1
 		lastx = -1
 	if Input.is_action_pressed(rightbutton):
 		direction.x += 1
-		facing.x
+		facing.x = 1
 		lastx = 1
 	if Input.is_action_pressed(upbutton):
 		facing.y = -1
@@ -66,12 +79,13 @@ func _process(delta):
 		facing.y = 1
 	else:
 		facing.x = lastx
-
+	if Input.is_action_just_pressed(fire):
+		squirt()
 
 	velocity.x = direction.x * walkspeed
 	prepos = position
 	move_and_slide(velocity)
 	velocity = (position - prepos)/delta
 	if debug:
-#		$Label.text = String(velocity) + String(isonground) + String(facing)
+		$Label.text = String(velocity) + String(isonground) + String(facing)
 		pass
