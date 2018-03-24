@@ -369,6 +369,8 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
+[connection signal="animation_finished" from="tempchar" to="." method="_on_tempchar_animation_finished"]
+
 [connection signal="death" from="ThirstBar" to="." method="_on_ThirstBar_death"]
 
 [connection signal="timeout" from="Stuntimer" to="." method="_on_Stuntimer_timeout"]

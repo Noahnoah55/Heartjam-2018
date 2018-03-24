@@ -28,6 +28,7 @@ var d
 var c
 var stun
 export var playernumber = '1'
+var firing = 0
 
 func _ready():
 	level = get_node('/root/Level')
@@ -53,10 +54,12 @@ func squirt():
 	new_bullet.add_to_group(playernumber)
 	level.add_child(new_bullet)
 	$ThirstBar.bigdrain()
+	firing = 1
+	$tempchar.play('FIRING')
 
 func die():
 	dead = true
-	$tempchar.play('DEAD')
+	$tempchar.play ('DEAD')
 
 func hit():
 	$Stuntimer.start()
@@ -117,16 +120,20 @@ func _process(delta):
 				squirt()
 	
 	#Animate
-	if lastx == -1:
-		$tempchar.set_flip_h(true)
+	if dead:
+		pass
+	elif firing == 1:
+		pass
 	else:
-		$tempchar.set_flip_h(false)
-	if isonground:
-		if direction.x != 0:
-			$tempchar.play('RUNNING')
+		if lastx == -1:
+			$tempchar.set_flip_h(true)
 		else:
-			$tempchar.play ('IDLE')
-	
+			$tempchar.set_flip_h(false)
+		if isonground:
+			if direction.x != 0:
+				$tempchar.play('RUNNING')
+			else:
+				$tempchar.play ('IDLE')
 	velocity.x = direction.x * walkspeed
 	prepos = position
 	if not dead:
@@ -140,3 +147,10 @@ func _on_ThirstBar_death():
 
 func _on_Stuntimer_timeout():
 	stun = false # replace with function body
+
+
+func _on_tempchar_animation_finished():
+	if $tempchar.animation == 'DEAD':
+		queue_free()
+	if $tempchar.animation == 'FIRING':
+		firing = 0
