@@ -81,7 +81,6 @@ func _process(delta):
 			if b[i] != self and b[i] != $Hitbox:
 				velocity.y = -bouncespeed
 				jumpsleft = 1
-				$tempchar.play('DEAD')
 	d = $Hitbox.get_overlapping_areas()
 	for i in range(0, d.size()):
 		if d[i].is_in_group('Bullet'):
@@ -116,7 +115,18 @@ func _process(delta):
 				facing.x = lastx
 			if Input.is_action_just_pressed(fire):
 				squirt()
-
+	
+	#Animate
+	if lastx == -1:
+		$tempchar.set_flip_h(true)
+	else:
+		$tempchar.set_flip_h(false)
+	if isonground:
+		if direction.x != 0:
+			$tempchar.play('RUNNING')
+		else:
+			$tempchar.play ('IDLE')
+	
 	velocity.x = direction.x * walkspeed
 	prepos = position
 	if not dead:
