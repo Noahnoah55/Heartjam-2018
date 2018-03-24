@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SpriteSheet2.png-ffa4d438973e04a4bb27770882969732.stex"
+path="res://.import/Barrel.png-ff34f40b2a15a84bb5aa4dbbb75f3c74.stex"
 
 [deps]
 
-source_file="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/SpriteSheets/SpriteSheet2.png"
-source_md5="f83444cf10a6a047ffed5e477e7f56e8"
+source_file="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Barrel/Barrel.png"
+source_md5="6480d497443afcd592255feda3f5746e"
 
-dest_files=[ "res://.import/SpriteSheet2.png-ffa4d438973e04a4bb27770882969732.stex" ]
-dest_md5="0a60d2cb8c2c743e03353aa97603c3e3"
+dest_files=[ "res://.import/Barrel.png-ff34f40b2a15a84bb5aa4dbbb75f3c74.stex" ]
+dest_md5="451cb2f200161770d056e3c1056b3c2e"
 
 [params]
 
