@@ -25,6 +25,8 @@ export (PackedScene) var bullet
 var level
 var dead
 var d
+var c
+var stun
 export var playernumber = '1'
 
 func _ready():
@@ -50,23 +52,25 @@ func squirt():
 	new_bullet.facing = facing
 	new_bullet.add_to_group(playernumber)
 	level.add_child(new_bullet)
+	$ThirstBar.bigdrain()
 
 func die():
 	dead = true
 	$tempchar.play('DEAD')
 
-func drain():
-	$ThirstBbar.drainbar()
-	
+func hit():
+	$Stuntimer.start()
+	stun = true
 
 func _process(delta):
 	direction = Vector2()
 	facing = Vector2()
 	isonground = false
-	if Input.is_action_pressed(jumpbutton):
-		velocity.y += gravity * delta
-	else:
-		velocity.y += gravity * delta * jumpbonus
+	c = $Roof.get_overlapping_bodies()
+	for i in range(0, c.size()):
+		if c[i].is_in_group('Block'):
+			velocity.y = velocity.y * -.8
+			position.y += 5
 	b = $Floor.get_overlapping_bodies()
 	for i in range(0, b.size()):
 		if b[i].is_in_group('Block'):
@@ -74,45 +78,55 @@ func _process(delta):
 			jumpsleft = 1
 			isonground = true
 		if b[i].is_in_group('Player'):
-			if b[i] != self:
+			if b[i] != self and b[i] != $Hitbox:
 				velocity.y = -bouncespeed
 				jumpsleft = 1
+				$tempchar.play('DEAD')
 	d = $Hitbox.get_overlapping_areas()
 	for i in range(0, d.size()):
 		if d[i].is_in_group('Bullet'):
 			if d[i].is_in_group(playernumber) == false:
-				drain()
-	if not dead:
-		if Input.is_action_just_pressed(jumpbutton):
-			if jumpsleft > 0:
-				velocity.y = -jumpforce
-				if isonground == false:
-					jumpsleft -= 1
-		if Input.is_action_pressed(leftbutton):
-			direction.x -= 1
-			facing.x = -1
-			lastx = -1
-		if Input.is_action_pressed(rightbutton):
-			direction.x += 1
-			facing.x = 1
-			lastx = 1
-		if Input.is_action_pressed(upbutton):
-			facing.y = -1
-		elif Input.is_action_pressed(downbutton):
-			facing.y = 1
-		else:
-			facing.x = lastx
-		if Input.is_action_just_pressed(fire):
-			squirt()
+				hit()
+	
+	#CONTROLS
+	if not stun:
+		if not dead:
+			if Input.is_action_pressed(jumpbutton):
+				velocity.y += gravity * delta * jumpbonus
+			else:
+				velocity.y += gravity * delta
+			if Input.is_action_just_pressed(jumpbutton):
+				if jumpsleft > 0:
+					velocity.y = -jumpforce
+					if isonground == false:
+						jumpsleft -= 1
+			if Input.is_action_pressed(leftbutton):
+				direction.x -= 1
+				facing.x = -1
+				lastx = -1
+			if Input.is_action_pressed(rightbutton):
+				direction.x += 1
+				facing.x = 1
+				lastx = 1
+			if Input.is_action_pressed(upbutton):
+				facing.y = -1
+			elif Input.is_action_pressed(downbutton):
+				facing.y = 1
+			else:
+				facing.x = lastx
+			if Input.is_action_just_pressed(fire):
+				squirt()
 
 	velocity.x = direction.x * walkspeed
 	prepos = position
 	if not dead:
 		move_and_slide(velocity)
-	velocity = (position - prepos)/delta
 	if debug:
-#		$Label.text = String(velocity) + String(isonground) + String(facing)
+		#$Label.text = String(velocity) + String(isonground) + String(facing)
 		pass
 
 func _on_ThirstBar_death():
 	die()
+
+func _on_Stuntimer_timeout():
+	stun = false # replace with function body
