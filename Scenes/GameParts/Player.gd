@@ -26,6 +26,7 @@ var level
 var dead
 var d
 export var playernumber = '1'
+
 func _ready():
 	level = get_node('/root/Level')
 	jumpforce = get_node('/root/Level').jumpforce
@@ -41,6 +42,7 @@ func _ready():
 		leftbutton += playernumber
 		rightbutton += playernumber
 		fire += playernumber
+	$ThirstBar.player = playernumber
 
 func squirt():
 	var new_bullet = bullet.instance()
@@ -49,12 +51,14 @@ func squirt():
 	new_bullet.add_to_group(playernumber)
 	level.add_child(new_bullet)
 
-func hit():
+func die():
 	dead = true
 	$tempchar.play('DEAD')
 
+func drain():
+	$ThirstBbar.drainbar()
+
 func _process(delta):
-	$Label.text = ''
 	direction = Vector2()
 	facing = Vector2()
 	isonground = false
@@ -74,11 +78,8 @@ func _process(delta):
 				jumpsleft = 1
 	d = $Hitbox.get_overlapping_areas()
 	for i in range(0, d.size()):
-		$Label.text += String(d[i].get_groups())
 		if d[i].is_in_group('Bullet'):
-			$Label.text = 'Registered'
 			if d[i].is_in_group(playernumber) == false:
-				$Label.text = 'Hit'
 				hit()
 	if not dead:
 		if Input.is_action_just_pressed(jumpbutton):
@@ -111,3 +112,6 @@ func _process(delta):
 	if debug:
 #		$Label.text = String(velocity) + String(isonground) + String(facing)
 		pass
+
+func _on_ThirstBar_death():
+	die()

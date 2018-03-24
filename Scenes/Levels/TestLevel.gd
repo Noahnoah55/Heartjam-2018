@@ -5,6 +5,7 @@ export var jumpforce = 500
 export var walkspeed = 300
 export var aircontrol = 400
 export var bouncespeed = 400
+export var drainspeed = 1 #Pixels drained per second
 
 func _ready():
 	pass

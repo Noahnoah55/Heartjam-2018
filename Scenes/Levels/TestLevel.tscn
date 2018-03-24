@@ -13,6 +13,7 @@ jumpforce = 500
 walkspeed = 300
 aircontrol = 400
 bouncespeed = 400
+drainspeed = 1
 
 [node name="TileMap" type="TileMap" parent="." index="0" groups=[
 "Block",
