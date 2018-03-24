@@ -49,7 +49,7 @@ func squirt():
 	new_bullet.add_to_group(playernumber)
 	level.add_child(new_bullet)
 
-func die():
+func hit():
 	dead = true
 	$tempchar.play('DEAD')
 
@@ -79,7 +79,7 @@ func _process(delta):
 			$Label.text = 'Registered'
 			if d[i].is_in_group(playernumber) == false:
 				$Label.text = 'Hit'
-				die()
+				hit()
 	if not dead:
 		if Input.is_action_just_pressed(jumpbutton):
 			if jumpsleft > 0:
