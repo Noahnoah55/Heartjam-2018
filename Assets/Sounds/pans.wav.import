@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/pans.wav-08c5ff27bb6f83f65481488e4682771d.sample"
+
+[deps]
+
+source_file="res://Assets/Sounds/pans.wav"
+source_md5="e34b68e78fac6419869ae8873cfa5013"
+
+dest_files=[ "res://.import/pans.wav-08c5ff27bb6f83f65481488e4682771d.sample" ]
+dest_md5="f0a79f5dafcdcec2614301cf0286bbe5"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

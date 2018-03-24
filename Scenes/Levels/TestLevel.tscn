@@ -21,6 +21,7 @@ drainspeed = 1
 "Block",
 ]]
 
+position = Vector2( -44.0908, -1.98602 )
 mode = 0
 tile_set = ExtResource( 2 )
 cell_size = Vector2( 32, 32 )
@@ -37,24 +38,24 @@ collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray( 1114118, 1, 0, 1114119, 1, 0, 1114120, 1, 0, 1114121, 1, 0, 1114122, 1, 0, 1114123, 1, 0, 1114124, 1, 0, 1114125, 1, 0, 1114126, 1, 0, 1114127, 1, 0, 1114128, 1, 0, 1114129, 1, 0, 1114130, 1, 0, 1114131, 1, 0, 1114132, 1, 0, 1114133, 1, 0, 1114134, 1, 0, 1114135, 1, 0, 1114136, 1, 0, 1114137, 1, 0, 1114138, 1, 0, 1114139, 1, 0, 1114140, 1, 0 )
+tile_data = PoolIntArray( 720903, 1, 0, 720904, 1, 0, 720905, 1, 0, 720906, 1, 0, 720907, 1, 0, 720918, 1, 0, 720919, 1, 0, 720920, 1, 0, 720921, 1, 0, 720922, 1, 0, 720923, 1, 0, 851982, 1, 0, 851983, 1, 0, 851984, 1, 0, 851985, 1, 0, 851986, 1, 0, 851987, 1, 0, 1114118, 1, 0, 1114119, 1, 0, 1114120, 1, 0, 1114121, 1, 0, 1114122, 1, 0, 1114123, 1, 0, 1114124, 1, 0, 1114125, 1, 0, 1114126, 1, 0, 1114127, 1, 0, 1114128, 1, 0, 1114129, 1, 0, 1114130, 1, 0, 1114131, 1, 0, 1114132, 1, 0, 1114133, 1, 0, 1114134, 1, 0, 1114135, 1, 0, 1114136, 1, 0, 1114137, 1, 0, 1114138, 1, 0, 1114139, 1, 0, 1114140, 1, 0 )
 _sections_unfolded = [ "Cell" ]
 
 [node name="Player" parent="." index="1" instance=ExtResource( 3 )]
 
-position = Vector2( 365.27, 472.925 )
+position = Vector2( 351.035, 498.484 )
 
 [node name="Player2" parent="." index="2" instance=ExtResource( 3 )]
 
-position = Vector2( 694.206, 462.588 )
+position = Vector2( 663.072, 494.92 )
 playernumber = "2"
 
 [node name="BigBottle" parent="." index="3" instance=ExtResource( 4 )]
 
-position = Vector2( 769.794, 503.374 )
+position = Vector2( 769.794, 521.935 )
 
 [node name="BigBottle2" parent="." index="4" instance=ExtResource( 5 )]
 
-position = Vector2( 254.941, 486.261 )
+position = Vector2( 307.353, 526.379 )
 
 
