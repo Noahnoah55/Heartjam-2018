@@ -6,7 +6,7 @@
 [ext_resource path="res://Scenes/GameParts/BigBottle.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/GameParts/SmallBottle.tscn" type="PackedScene" id=5]
 
-[node name="Level" type="Node2D"]
+[node name="Level" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 gravity = 2000
@@ -42,7 +42,7 @@ _sections_unfolded = [ "Cell" ]
 
 [node name="Player" parent="." index="1" instance=ExtResource( 3 )]
 
-position = Vector2( 365.27, 472.925 )
+position = Vector2( 364.042, 433.637 )
 
 [node name="Player2" parent="." index="2" instance=ExtResource( 3 )]
 
