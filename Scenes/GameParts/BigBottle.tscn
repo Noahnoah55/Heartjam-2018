@@ -7,9 +7,9 @@
 custom_solver_bias = 0.0
 extents = Vector2( 8, 10 )
 
-[node name="BigBottle" type="Area2D" index="0" groups=[
-"Bottle",
+[node name="BigBottle" type="Area2D" groups=[
 "Big",
+"Bottle",
 ]]
 
 scale = Vector2( 2, 2 )
