@@ -13,6 +13,8 @@ export var downbutton = 'ui_down'
 export var leftbutton = 'ui_left'
 export var rightbutton = 'ui_right'
 export var fire = 'ui_fire'
+signal p1win
+signal p2win
 var direction = Vector2()
 var throw = 0
 var b = 0
@@ -34,6 +36,8 @@ signal death
 
 func _ready():
 	level = get_node('/root/Camera/Level')
+	connect('p1win',get_node('/root/Camera'),'_p1win')
+	connect('p2win',get_node('/root/Camera'),'_p2win')
 	jumpforce = level.jumpforce
 	walkspeed = level.walkspeed
 	aircontrol = level.aircontrol
@@ -66,6 +70,7 @@ func die():
 func hit():
 	$Stuntimer.start()
 	stun = true
+	$tempchar.play('STUNNED')
 
 func _process(delta):
 	direction = Vector2()
@@ -135,6 +140,8 @@ func _process(delta):
 		pass
 	elif jumping == 1:
 		pass
+	elif stun == true:
+		pass
 	else:
 		if lastx == -1:
 			$tempchar.set_flip_h(true)
@@ -161,11 +168,14 @@ func _on_ThirstBar_death():
 	die()
 
 func _on_Stuntimer_timeout():
-	stun = false # replace with function body
-
+	stun = false
 
 func _on_tempchar_animation_finished():
 	if $tempchar.animation == 'DEAD':
+		if playernumber == '1':
+			emit_signal('p2win')
+		if playernumber == '2':
+			emit_signal('p1win')
 		queue_free()
 	if $tempchar.animation == 'FIRING':
 		firing = 0
