@@ -4,7 +4,7 @@
 [ext_resource path="res://Scenes/GameParts/P2.gd" type="Script" id=2]
 [ext_resource path="res://Scenes/Levels/LevelSelect.tscn" type="PackedScene" id=3]
 
-[node name="Sprite" type="Sprite" index="0"]
+[node name="Sprite" type="Sprite"]
 
 position = Vector2( 651.371, 327.356 )
 scale = Vector2( 2, 2 )

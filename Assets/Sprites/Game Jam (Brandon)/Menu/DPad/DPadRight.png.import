@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/DPadRight.png-bdbcbe44fc76a74aedd133a611db8246.stex"
+
+[deps]
+
+source_file="res://Assets/Sprites/Game Jam (Brandon)/Menu/DPad/DPadRight.png"
+source_md5="b3ffe0c6cf3628adce0f28e74027f8ac"
+
+dest_files=[ "res://.import/DPadRight.png-bdbcbe44fc76a74aedd133a611db8246.stex" ]
+dest_md5="c019ea8b5add7cd31759fd2404d03884"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/XButton.png-ec1cf6c42562792dc0d9c64f1e249726.stex"
+
+[deps]
+
+source_file="res://Assets/Sprites/Game Jam (Brandon)/Menu/Buttons/X/XButton.png"
+source_md5="37903cfff58ab31f64863c45e0c7c04f"
+
+dest_files=[ "res://.import/XButton.png-ec1cf6c42562792dc0d9c64f1e249726.stex" ]
+dest_md5="68a59e8fe4872123d15442f7d3507ed6"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
