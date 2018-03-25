@@ -1,4 +1,4 @@
-[gd_scene load_steps=77 format=2]
+[gd_scene load_steps=79 format=2]
 
 [ext_resource path="res://Scenes/Levels/Binderino.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Backgrounds/Main_Men1.png" type="Texture" id=2]
@@ -27,49 +27,51 @@
 [ext_resource path="res://Assets/Backgrounds/Main_Men24.png" type="Texture" id=25]
 [ext_resource path="res://Assets/Backgrounds/Main_Men25.png" type="Texture" id=26]
 [ext_resource path="res://Assets/Backgrounds/Main_Men26.png" type="Texture" id=27]
-[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Menu/Players/player1.png" type="Texture" id=28]
-[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Menu/Players/player2.png" type="Texture" id=29]
-[ext_resource path="res://Assets/Sprites/LEFT.png" type="Texture" id=30]
-[ext_resource path="res://Assets/Sprites/DOWN.png" type="Texture" id=31]
-[ext_resource path="res://Assets/Sprites/UP.png" type="Texture" id=32]
-[ext_resource path="res://Assets/Sprites/RIGHT.png" type="Texture" id=33]
-[ext_resource path="res://Assets/Sprites/JMP.png" type="Texture" id=34]
-[ext_resource path="res://Assets/Sprites/FIRE.png" type="Texture" id=35]
-[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Menu/Controller/Controller.png" type="Texture" id=36]
-[ext_resource path="res://Assets/Sprites/key W.png" type="Texture" id=37]
-[ext_resource path="res://Assets/Sprites/key A.png" type="Texture" id=38]
-[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Menu/DPad/DPadRight.png" type="Texture" id=39]
-[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Menu/DPad/DPadDown.png" type="Texture" id=40]
-[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Menu/Buttons/A/AButton.png" type="Texture" id=41]
-[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Menu/Buttons/X/XButton.png" type="Texture" id=42]
-[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Menu/DPad/DPadUP.png" type="Texture" id=43]
-[ext_resource path="res://Assets/Sprites/key S.png" type="Texture" id=44]
-[ext_resource path="res://Assets/Sprites/key D.png" type="Texture" id=45]
-[ext_resource path="res://Assets/Sprites/key E.png" type="Texture" id=46]
-[ext_resource path="res://Assets/Sprites/key Space.png" type="Texture" id=47]
-[ext_resource path="res://Assets/Sprites/key Down.png" type="Texture" id=48]
-[ext_resource path="res://Assets/Sprites/key UP.png" type="Texture" id=49]
-[ext_resource path="res://Assets/Sprites/key LEFT.png" type="Texture" id=50]
-[ext_resource path="res://Assets/Sprites/key RIGHT.png" type="Texture" id=51]
-[ext_resource path="res://Assets/Sprites/keycomma.png" type="Texture" id=52]
-[ext_resource path="res://Assets/Sprites/keyperiod.png" type="Texture" id=53]
-[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Menu/DPad/DPadLeft.png" type="Texture" id=54]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois1.png" type="Texture" id=55]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois2.png" type="Texture" id=56]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois3.png" type="Texture" id=57]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois4.png" type="Texture" id=58]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois5.png" type="Texture" id=59]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois6.png" type="Texture" id=60]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois7.png" type="Texture" id=61]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois8.png" type="Texture" id=62]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois9.png" type="Texture" id=63]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois10.png" type="Texture" id=64]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois11.png" type="Texture" id=65]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois12.png" type="Texture" id=66]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois13.png" type="Texture" id=67]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois14.png" type="Texture" id=68]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois15.png" type="Texture" id=69]
-[ext_resource path="res://Scenes/Levels/Logo.gd" type="Script" id=70]
+[ext_resource path="res://Scenes/Levels/Background.gd" type="Script" id=28]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Menu/Players/player1.png" type="Texture" id=29]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Menu/Players/player2.png" type="Texture" id=30]
+[ext_resource path="res://Assets/Sprites/LEFT.png" type="Texture" id=31]
+[ext_resource path="res://Assets/Sprites/DOWN.png" type="Texture" id=32]
+[ext_resource path="res://Assets/Sprites/UP.png" type="Texture" id=33]
+[ext_resource path="res://Assets/Sprites/RIGHT.png" type="Texture" id=34]
+[ext_resource path="res://Assets/Sprites/JMP.png" type="Texture" id=35]
+[ext_resource path="res://Assets/Sprites/FIRE.png" type="Texture" id=36]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Menu/Controller/Controller.png" type="Texture" id=37]
+[ext_resource path="res://Assets/Sprites/key W.png" type="Texture" id=38]
+[ext_resource path="res://Assets/Sprites/key A.png" type="Texture" id=39]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Menu/DPad/DPadRight.png" type="Texture" id=40]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Menu/DPad/DPadDown.png" type="Texture" id=41]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Menu/Buttons/A/AButton.png" type="Texture" id=42]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Menu/Buttons/X/XButton.png" type="Texture" id=43]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Menu/DPad/DPadUP.png" type="Texture" id=44]
+[ext_resource path="res://Assets/Sprites/key S.png" type="Texture" id=45]
+[ext_resource path="res://Assets/Sprites/key D.png" type="Texture" id=46]
+[ext_resource path="res://Assets/Sprites/key E.png" type="Texture" id=47]
+[ext_resource path="res://Assets/Sprites/key Space.png" type="Texture" id=48]
+[ext_resource path="res://Assets/Sprites/key Down.png" type="Texture" id=49]
+[ext_resource path="res://Assets/Sprites/key UP.png" type="Texture" id=50]
+[ext_resource path="res://Assets/Sprites/key LEFT.png" type="Texture" id=51]
+[ext_resource path="res://Assets/Sprites/key RIGHT.png" type="Texture" id=52]
+[ext_resource path="res://Assets/Sprites/keycomma.png" type="Texture" id=53]
+[ext_resource path="res://Assets/Sprites/keyperiod.png" type="Texture" id=54]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Menu/DPad/DPadLeft.png" type="Texture" id=55]
+[ext_resource path="res://Scenes/GameParts/coninue.tscn" type="PackedScene" id=56]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois1.png" type="Texture" id=57]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois2.png" type="Texture" id=58]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois3.png" type="Texture" id=59]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois4.png" type="Texture" id=60]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois5.png" type="Texture" id=61]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois6.png" type="Texture" id=62]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois7.png" type="Texture" id=63]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois8.png" type="Texture" id=64]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois9.png" type="Texture" id=65]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois10.png" type="Texture" id=66]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois11.png" type="Texture" id=67]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois12.png" type="Texture" id=68]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois13.png" type="Texture" id=69]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois14.png" type="Texture" id=70]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois15.png" type="Texture" id=71]
+[ext_resource path="res://Scenes/Levels/Logo.gd" type="Script" id=72]
 
 [sub_resource type="SpriteFrames" id=6]
 
@@ -77,7 +79,7 @@ animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ) ],
 "loop": true,
 "name": "default",
-"speed": 5.0
+"speed": 10.0
 } ]
 
 [sub_resource type="StreamTexture" id=1]
@@ -93,7 +95,7 @@ load_path = ""
 [sub_resource type="SpriteFrames" id=3]
 
 animations = [ {
-"frames": [ ExtResource( 28 ) ],
+"frames": [ ExtResource( 29 ) ],
 "loop": true,
 "name": "P1",
 "speed": 5.0
@@ -103,7 +105,7 @@ animations = [ {
 "name": "P3",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 29 ) ],
+"frames": [ ExtResource( 30 ) ],
 "loop": true,
 "name": "P2",
 "speed": 5.0
@@ -117,32 +119,32 @@ animations = [ {
 [sub_resource type="SpriteFrames" id=4]
 
 animations = [ {
-"frames": [ ExtResource( 30 ) ],
+"frames": [ ExtResource( 31 ) ],
 "loop": true,
 "name": "ui_left",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 31 ) ],
+"frames": [ ExtResource( 32 ) ],
 "loop": true,
 "name": "ui_down",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 32 ) ],
+"frames": [ ExtResource( 33 ) ],
 "loop": true,
 "name": "ui_up",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 33 ) ],
+"frames": [ ExtResource( 34 ) ],
 "loop": true,
 "name": "ui_right",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 34 ) ],
+"frames": [ ExtResource( 35 ) ],
 "loop": true,
 "name": "ui_jump",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 35 ) ],
+"frames": [ ExtResource( 36 ) ],
 "loop": true,
 "name": "ui_fire",
 "speed": 5.0
@@ -151,13 +153,13 @@ animations = [ {
 [sub_resource type="SpriteFrames" id=5]
 
 animations = [ {
-"frames": [ ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 55 ) ],
+"frames": [ ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 57 ) ],
 "loop": false,
 "name": "default",
 "speed": 15.0
 } ]
 
-[node name="binderino" type="Node2D"]
+[node name="binderino" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
@@ -169,7 +171,8 @@ position = Vector2( 632.056, 297.652 )
 scale = Vector2( 5.05605, 5.05605 )
 frames = SubResource( 6 )
 animation = "default"
-_sections_unfolded = [ "Material", "Visibility" ]
+script = ExtResource( 28 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="P1" type="AnimatedSprite" parent="." index="1"]
 
@@ -247,106 +250,112 @@ _sections_unfolded = [ "Transform" ]
 
 position = Vector2( 789.953, 44.5585 )
 scale = Vector2( 4, 4 )
-texture = ExtResource( 36 )
+texture = ExtResource( 37 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="key W" type="Sprite" parent="." index="14"]
 
 position = Vector2( 307.419, 138.075 )
-texture = ExtResource( 37 )
+texture = ExtResource( 38 )
 
 [node name="key A" type="Sprite" parent="key W" index="0"]
 
 position = Vector2( 2.72073, 213.579 )
-texture = ExtResource( 38 )
+texture = ExtResource( 39 )
 
 [node name="DPadRight" type="Sprite" parent="key W/key A" index="0"]
 
 position = Vector2( 481.138, 80.058 )
-texture = ExtResource( 39 )
+texture = ExtResource( 40 )
 
 [node name="DPadDown" type="Sprite" parent="key W/key A/DPadRight" index="0"]
 
 position = Vector2( -3.34027, -175.369 )
-texture = ExtResource( 40 )
+texture = ExtResource( 41 )
 
 [node name="AButton" type="Sprite" parent="key W/key A/DPadRight/DPadDown" index="0"]
 
 position = Vector2( -11.6913, 384.142 )
-texture = ExtResource( 41 )
+texture = ExtResource( 42 )
 
 [node name="XButton" type="Sprite" parent="key W/key A/DPadRight/DPadDown" index="1"]
 
 position = Vector2( -10.0212, 287.271 )
-texture = ExtResource( 42 )
+texture = ExtResource( 43 )
 
 [node name="DPadUP" type="Sprite" parent="key W/key A/DPadRight" index="1"]
 
 position = Vector2( -3.34033, -263.889 )
-texture = ExtResource( 43 )
+texture = ExtResource( 44 )
 
 [node name="key S" type="Sprite" parent="key W" index="1"]
 
 position = Vector2( 1.36035, 116.992 )
-texture = ExtResource( 44 )
+texture = ExtResource( 45 )
 
 [node name="key D" type="Sprite" parent="key W" index="2"]
 
 position = Vector2( 0, 312.886 )
-texture = ExtResource( 45 )
+texture = ExtResource( 46 )
 
 [node name="key E" type="Sprite" parent="." index="15"]
 
 position = Vector2( 308.78, 561.151 )
-texture = ExtResource( 46 )
+texture = ExtResource( 47 )
 
 [node name="key Space" type="Sprite" parent="." index="16"]
 
 position = Vector2( 304.699, 663.179 )
-texture = ExtResource( 47 )
+texture = ExtResource( 48 )
 
 [node name="key Down" type="Sprite" parent="." index="17"]
 
 position = Vector2( 559.089, 246.905 )
-texture = ExtResource( 48 )
+texture = ExtResource( 49 )
 
 [node name="key UP" type="Sprite" parent="." index="18"]
 
 position = Vector2( 565.891, 138.075 )
-texture = ExtResource( 49 )
+texture = ExtResource( 50 )
 
 [node name="key LEFT" type="Sprite" parent="." index="19"]
 
 position = Vector2( 561.809, 344.852 )
-texture = ExtResource( 50 )
+texture = ExtResource( 51 )
 
 [node name="key RIGHT" type="Sprite" parent="." index="20"]
 
 position = Vector2( 559.089, 442.799 )
-texture = ExtResource( 51 )
+texture = ExtResource( 52 )
 
 [node name="keycomma" type="Sprite" parent="." index="21"]
 
 position = Vector2( 557.728, 543.466 )
-texture = ExtResource( 52 )
+texture = ExtResource( 53 )
 
 [node name="keyperiod" type="Sprite" parent="." index="22"]
 
 position = Vector2( 556.368, 653.657 )
-texture = ExtResource( 53 )
+texture = ExtResource( 54 )
 
 [node name="DPadLeft" type="Sprite" parent="." index="23"]
 
 position = Vector2( 789.608, 346.532 )
-texture = ExtResource( 54 )
+texture = ExtResource( 55 )
 
-[node name="Logo" type="AnimatedSprite" parent="." index="24"]
+[node name="slash" parent="." index="24" instance=ExtResource( 56 )]
+
+position = Vector2( 1101.02, 450 )
+scale = Vector2( 2, 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Logo" type="AnimatedSprite" parent="." index="25"]
 
 position = Vector2( 1065.58, 85.1793 )
 scale = Vector2( 4, 4 )
 frames = SubResource( 5 )
 animation = "default"
-script = ExtResource( 70 )
+script = ExtResource( 72 )
 _sections_unfolded = [ "Transform" ]
 
 
