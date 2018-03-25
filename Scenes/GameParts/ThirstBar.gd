@@ -12,7 +12,7 @@ signal death
 func _ready():
 	# Called every time the node is added to the scene.
 	# Initialization here
-	var level = get_node('/root/Level')
+	var level = get_node('/root/Camera/Level')
 	drainspeed = level.drainspeed
 
 func drawbars():

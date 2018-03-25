@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/Levels/Main.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Levels/TestLevel.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Levels/Binderino.tscn" type="PackedScene" id=3]
+
+[node name="Camera" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+Keybinding = null
+Level = ExtResource( 2 )
+
+[node name="binderino" parent="." index="0" instance=ExtResource( 3 )]
+
+[connection signal="done" from="binderino" to="." method="_on_binderino_done"]
+
+
