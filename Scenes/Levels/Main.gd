@@ -14,9 +14,7 @@ func _ready():
 func _process(delta):
 	pass
 
-func _on_Menu_done():
-	playercount = $Menu.playercount
-	var binderino = Keybinding.instance()
-	binderino.playercount = playercount
-	add_child(binderino)
-	$Menu.queue_free()
+func _on_binderino_done():
+	var level = Level.instance()
+	add_child(level)
+	$binderino.queue_free() # replace with function body

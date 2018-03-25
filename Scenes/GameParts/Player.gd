@@ -32,8 +32,6 @@ var firing = 0
 var jumping = 0
 
 func _ready():
-	if playernumber > get_node('/root/Camera').playercount:
-		queue_free()
 	level = get_node('/root/Camera/Level')
 	jumpforce = level.jumpforce
 	walkspeed = level.walkspeed
@@ -145,6 +143,8 @@ func _process(delta):
 			if direction.x != 0:
 				$tempchar.play('RUNNING')
 			else:
+				if facing.y == -1:
+					$tempchar.play('UPFACE')
 				$tempchar.play ('IDLE')
 		else:
 			$tempchar.play('MIDAIR')
