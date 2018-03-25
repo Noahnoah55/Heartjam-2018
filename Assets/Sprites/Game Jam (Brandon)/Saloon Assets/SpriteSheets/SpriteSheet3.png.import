@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/SpriteSheet3.png-d1baa7c721dabcd43e635e26dca1420c.stex"
+
+[deps]
+
+source_file="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/SpriteSheets/SpriteSheet3.png"
+source_md5="5c9d84d21e8a57fb53eede885ea90b59"
+
+dest_files=[ "res://.import/SpriteSheet3.png-d1baa7c721dabcd43e635e26dca1420c.stex" ]
+dest_md5="3ba093c4d5b5009303c91589a6641094"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
