@@ -342,7 +342,7 @@ texture = ExtResource( 54 )
 
 [node name="Logo" type="AnimatedSprite" parent="." index="24"]
 
-position = Vector2( 1225.91, 73.488 )
+position = Vector2( 1065.58, 85.1793 )
 scale = Vector2( 4, 4 )
 frames = SubResource( 5 )
 animation = "default"
