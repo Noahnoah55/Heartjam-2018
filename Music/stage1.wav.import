@@ -7,10 +7,10 @@ path="res://.import/stage1.wav-a47db960490d29028a250176c2bfa74c.sample"
 [deps]
 
 source_file="res://Music/stage1.wav"
-source_md5="80511b4a06f3800da2dcd8e51270899b"
+source_md5="6f3f94aa19828d93c034bb8ccb11adff"
 
 dest_files=[ "res://.import/stage1.wav-a47db960490d29028a250176c2bfa74c.sample" ]
-dest_md5="c07d967341505ea75a6135cc53c71797"
+dest_md5="feca3e8621baad0a38e87297f108f135"
 
 [params]
 
