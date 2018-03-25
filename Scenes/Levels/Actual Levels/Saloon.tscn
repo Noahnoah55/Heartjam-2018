@@ -34,10 +34,10 @@
 [ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Sprites/Paino.png" type="Texture" id=32]
 [ext_resource path="res://Scenes/GameParts/BigBottle.tscn" type="PackedScene" id=33]
 [ext_resource path="res://Scenes/GameParts/SmallBottle.tscn" type="PackedScene" id=34]
-[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Barrel/Barrel.png" type="Texture" id=35]
-[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Sprites/DartBoard.png" type="Texture" id=36]
-[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Sprites/Knife.png" type="Texture" id=37]
-[ext_resource path="res://Scenes/GameParts/Player.tscn" type="PackedScene" id=38]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Sprites/DartBoard.png" type="Texture" id=35]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Sprites/Knife.png" type="Texture" id=36]
+[ext_resource path="res://Scenes/GameParts/Player.tscn" type="PackedScene" id=37]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Barrel/Barrel.png" type="Texture" id=38]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -48,7 +48,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[node name="Level" type="Node2D" index="0"]
+[node name="Level" type="Node2D"]
 
 script = ExtResource( 1 )
 gravity = 2000
@@ -180,52 +180,52 @@ position = Vector2( 566.351, 376.294 )
 
 position = Vector2( 759.15, 377.402 )
 
-[node name="Barrel" type="Sprite" parent="." index="9"]
-
-position = Vector2( 452.667, 478.954 )
-texture = ExtResource( 35 )
-
-[node name="Barrel3" type="Sprite" parent="." index="10"]
-
-position = Vector2( 487.74, 349.648 )
-texture = ExtResource( 35 )
-
-[node name="Barrel4" type="Sprite" parent="." index="11"]
-
-position = Vector2( 839.116, 350.383 )
-texture = ExtResource( 35 )
-
-[node name="Barrel5" type="Sprite" parent="." index="12"]
-
-position = Vector2( 582.296, 222.724 )
-texture = ExtResource( 35 )
-
-[node name="Barrel6" type="Sprite" parent="." index="13"]
-
-position = Vector2( 742.754, 223.538 )
-texture = ExtResource( 35 )
-
-[node name="DartBoard" type="Sprite" parent="." index="14"]
+[node name="DartBoard" type="Sprite" parent="." index="9"]
 
 position = Vector2( 496.047, 448.971 )
 scale = Vector2( 0.539804, 0.539804 )
-texture = ExtResource( 36 )
+texture = ExtResource( 35 )
 
-[node name="Knife" type="Sprite" parent="." index="15"]
+[node name="Knife" type="Sprite" parent="." index="10"]
 
 position = Vector2( 486.692, 452.795 )
 rotation = 1.309
 scale = Vector2( 0.365834, 0.365834 )
-texture = ExtResource( 37 )
+texture = ExtResource( 36 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Player" parent="." index="16" instance=ExtResource( 38 )]
+[node name="Player" parent="." index="11" instance=ExtResource( 37 )]
 
 position = Vector2( 360.518, 587.818 )
 
-[node name="Player2" parent="." index="17" instance=ExtResource( 38 )]
+[node name="Player2" parent="." index="12" instance=ExtResource( 37 )]
 
 position = Vector2( 972.283, 585.024 )
 playernumber = "2"
+
+[node name="Barrel" type="Sprite" parent="." index="13"]
+
+position = Vector2( 452.667, 478.954 )
+texture = ExtResource( 38 )
+
+[node name="Barrel3" type="Sprite" parent="." index="14"]
+
+position = Vector2( 487.74, 349.648 )
+texture = ExtResource( 38 )
+
+[node name="Barrel4" type="Sprite" parent="." index="15"]
+
+position = Vector2( 839.116, 350.383 )
+texture = ExtResource( 38 )
+
+[node name="Barrel5" type="Sprite" parent="." index="16"]
+
+position = Vector2( 582.296, 222.724 )
+texture = ExtResource( 38 )
+
+[node name="Barrel6" type="Sprite" parent="." index="17"]
+
+position = Vector2( 742.754, 223.538 )
+texture = ExtResource( 38 )
 
 

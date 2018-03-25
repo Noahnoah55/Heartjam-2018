@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Scenes/Levels/Actual Levels/TestLevel.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Tiles/SaloonTileset.tres" type="TileSet" id=2]
@@ -11,7 +11,10 @@
 [ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Bottles/Alchohol/SmallBottle.png" type="Texture" id=9]
 [ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Bottles/Alchohol/BigBottle.png" type="Texture" id=10]
 [ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Barrel/Barrel.png" type="Texture" id=11]
-[ext_resource path="res://Scenes/GameParts/Player.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Sprites/DartBoard.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Sprites/Knife.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Sprites/Paino.png" type="Texture" id=14]
+[ext_resource path="res://Scenes/GameParts/Player.tscn" type="PackedScene" id=15]
 
 [node name="Level" type="Node2D"]
 
@@ -146,7 +149,7 @@ position = Vector2( 335.177, 604.801 )
 
 [node name="Small" parent="TileMap" index="16" instance=ExtResource( 8 )]
 
-position = Vector2( 398.575, 509.399 )
+position = Vector2( 402.079, 513.195 )
 
 [node name="Small3" parent="TileMap" index="17" instance=ExtResource( 8 )]
 
@@ -227,11 +230,31 @@ texture = ExtResource( 11 )
 position = Vector2( 720.386, 390.428 )
 texture = ExtResource( 11 )
 
-[node name="Player" parent="." index="1" instance=ExtResource( 12 )]
+[node name="DartBoard" type="Sprite" parent="TileMap" index="34"]
+
+position = Vector2( 718.885, 485.916 )
+scale = Vector2( 0.676992, 0.676992 )
+texture = ExtResource( 12 )
+
+[node name="Knife" type="Sprite" parent="TileMap" index="35"]
+
+position = Vector2( 699.783, 657.604 )
+rotation = 3.05433
+scale = Vector2( 0.378416, 0.378416 )
+texture = ExtResource( 13 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Paino" type="Sprite" parent="TileMap" index="36"]
+
+position = Vector2( 339.756, 518.168 )
+scale = Vector2( 1.83531, 1.83531 )
+texture = ExtResource( 14 )
+
+[node name="Player" parent="." index="1" instance=ExtResource( 15 )]
 
 position = Vector2( 365.682, 429.241 )
 
-[node name="Player2" parent="." index="2" instance=ExtResource( 12 )]
+[node name="Player2" parent="." index="2" instance=ExtResource( 15 )]
 
 position = Vector2( 874.498, 429.939 )
 playernumber = "2"

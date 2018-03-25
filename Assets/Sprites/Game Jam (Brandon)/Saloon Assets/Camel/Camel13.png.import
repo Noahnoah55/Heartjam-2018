@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Camel13.png-24d3499a7df0ebee3552fc88a71397fd.stex"
+
+[deps]
+
+source_file="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Camel/Camel13.png"
+source_md5="03b87a4ffbc7025172d91bae4965fde8"
+
+dest_files=[ "res://.import/Camel13.png-24d3499a7df0ebee3552fc88a71397fd.stex" ]
+dest_md5="b3e2fb50c7d33ed7b85dd26411929dd7"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

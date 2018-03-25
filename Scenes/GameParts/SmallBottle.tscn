@@ -49,7 +49,7 @@ shape = SubResource( 1 )
 
 frames = SubResource( 2 )
 animation = "default"
-frame = 4
+frame = 2
 playing = true
 
 
