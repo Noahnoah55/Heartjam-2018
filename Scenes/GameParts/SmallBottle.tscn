@@ -24,7 +24,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[node name="Small" type="Area2D" index="0" groups=[
+[node name="Small" type="Area2D" groups=[
 "Bottle",
 "Small",
 ]]

@@ -32,13 +32,13 @@ var firing = 0
 var jumping = 0
 
 func _ready():
-	level = get_node('/root/Level')
-	jumpforce = get_node('/root/Level').jumpforce
-	walkspeed = get_node('/root/Level').walkspeed
-	aircontrol = get_node('/root/Level').aircontrol
-	jumpbonus = get_node('/root/Level').jumpbonus
-	gravity = get_node('/root/Level').gravity
-	bouncespeed = get_node('/root/Level').bouncespeed
+	level = get_node('/root/Camera/Level')
+	jumpforce = level.jumpforce
+	walkspeed = level.walkspeed
+	aircontrol = level.aircontrol
+	jumpbonus = level.jumpbonus
+	gravity = level.gravity
+	bouncespeed = level.bouncespeed
 	if int(playernumber) > 1:
 		jumpbutton += playernumber
 		upbutton += playernumber
@@ -143,6 +143,8 @@ func _process(delta):
 			if direction.x != 0:
 				$tempchar.play('RUNNING')
 			else:
+				if facing.y == -1:
+					$tempchar.play('UPFACE')
 				$tempchar.play ('IDLE')
 		else:
 			$tempchar.play('MIDAIR')
