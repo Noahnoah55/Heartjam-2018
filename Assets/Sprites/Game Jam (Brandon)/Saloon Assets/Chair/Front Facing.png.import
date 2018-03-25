@@ -7,10 +7,10 @@ path="res://.import/Front Facing.png-12fc5e46164aa70f09252ccfba38de55.stex"
 [deps]
 
 source_file="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Chair/Front Facing.png"
-source_md5="5d19e6f615b580d18f4e5579d3daf046"
+source_md5="4af8e93596098ebace860b1fc395c0ed"
 
 dest_files=[ "res://.import/Front Facing.png-12fc5e46164aa70f09252ccfba38de55.stex" ]
-dest_md5="cb82e9fbe03d7d022d0a2c0cbb84d000"
+dest_md5="7765e7fe6b97bdddb21c2cff027b4101"
 
 [params]
 

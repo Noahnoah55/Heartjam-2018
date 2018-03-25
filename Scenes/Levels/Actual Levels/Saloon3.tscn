@@ -1,0 +1,85 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scenes/Levels/Actual Levels/TestLevel.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Tiles/SaloonTileset.tres" type="TileSet" id=2]
+[ext_resource path="res://Scenes/GameParts/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/GameParts/BigBottle.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/GameParts/SmallBottle.tscn" type="PackedScene" id=5]
+
+[node name="Level" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+gravity = 2000
+jumpbonus = 0.5
+jumpforce = 500
+walkspeed = 300
+aircontrol = 400
+bouncespeed = 400
+drainspeed = 1
+
+[node name="TileMap" type="TileMap" parent="." index="0" groups=[
+"Block",
+]]
+
+position = Vector2( 126.515, 27.2075 )
+mode = 0
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 32, 32 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 917508, 4, 0, 917509, 4, 0, 917510, 4, 0, 917511, 4, 0, 917528, 4, 0, 917529, 4, 0, 917530, 4, 0, 917531, 4, 0, 983047, 4, 0, 983064, 4, 0, 1048583, 4, 0, 1048600, 4, 0, 1114119, 4, 0, 1114120, 4, 0, 1114121, 4, 0, 1114122, 4, 0, 1114123, 4, 0, 1114124, 6, 0, 1114131, 6, 0, 1114132, 4, 0, 1114133, 4, 0, 1114134, 4, 0, 1114135, 4, 0, 1114136, 4, 0, 1179651, 6, 0, 1179652, 6, 0, 1179653, 6, 0, 1179654, 6, 0, 1179655, 4, 0, 1179672, 4, 0, 1179673, 6, 0, 1179674, 6, 0, 1179675, 6, 0, 1179676, 6, 0 )
+_sections_unfolded = [ "Cell" ]
+
+[node name="TileMap2" type="TileMap" parent="." index="1" groups=[
+"Block",
+]]
+
+position = Vector2( 126.515, 27.2075 )
+mode = 0
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 32, 32 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 917508, 4, 0, 917509, 4, 0, 917510, 4, 0, 917511, 4, 0, 917528, 4, 0, 917529, 4, 0, 917530, 4, 0, 917531, 4, 0, 983047, 4, 0, 983064, 4, 0, 1048583, 4, 0, 1048600, 4, 0, 1114119, 4, 0, 1114120, 4, 0, 1114121, 4, 0, 1114122, 4, 0, 1114123, 4, 0, 1114124, 6, 0, 1114131, 6, 0, 1114132, 4, 0, 1114133, 4, 0, 1114134, 4, 0, 1114135, 4, 0, 1114136, 4, 0, 1179651, 6, 0, 1179652, 6, 0, 1179653, 6, 0, 1179654, 6, 0, 1179655, 4, 0, 1179672, 4, 0, 1179673, 6, 0, 1179674, 6, 0, 1179675, 6, 0, 1179676, 6, 0 )
+_sections_unfolded = [ "Cell" ]
+
+[node name="Player" parent="." index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 356.675, 469.241 )
+
+[node name="Player2" parent="." index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 694.206, 462.588 )
+playernumber = "2"
+
+[node name="BigBottle" parent="." index="4" instance=ExtResource( 4 )]
+
+position = Vector2( 865.02, 491.131 )
+
+[node name="Small" parent="." index="5" instance=ExtResource( 5 )]
+
+position = Vector2( 276.242, 498.463 )
+
+
