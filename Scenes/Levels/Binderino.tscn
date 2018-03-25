@@ -1,4 +1,4 @@
-[gd_scene load_steps=77 format=2]
+[gd_scene load_steps=78 format=2]
 
 [ext_resource path="res://Scenes/Levels/Binderino.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Backgrounds/Main_Men1.png" type="Texture" id=2]
@@ -54,22 +54,23 @@
 [ext_resource path="res://Assets/Sprites/keycomma.png" type="Texture" id=52]
 [ext_resource path="res://Assets/Sprites/keyperiod.png" type="Texture" id=53]
 [ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Menu/DPad/DPadLeft.png" type="Texture" id=54]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois1.png" type="Texture" id=55]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois2.png" type="Texture" id=56]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois3.png" type="Texture" id=57]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois4.png" type="Texture" id=58]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois5.png" type="Texture" id=59]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois6.png" type="Texture" id=60]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois7.png" type="Texture" id=61]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois8.png" type="Texture" id=62]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois9.png" type="Texture" id=63]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois10.png" type="Texture" id=64]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois11.png" type="Texture" id=65]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois12.png" type="Texture" id=66]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois13.png" type="Texture" id=67]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois14.png" type="Texture" id=68]
-[ext_resource path="res://Assets/Logo/Thirsty_Bois15.png" type="Texture" id=69]
-[ext_resource path="res://Scenes/Levels/Logo.gd" type="Script" id=70]
+[ext_resource path="res://Scenes/GameParts/coninue.tscn" type="PackedScene" id=55]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois1.png" type="Texture" id=56]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois2.png" type="Texture" id=57]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois3.png" type="Texture" id=58]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois4.png" type="Texture" id=59]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois5.png" type="Texture" id=60]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois6.png" type="Texture" id=61]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois7.png" type="Texture" id=62]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois8.png" type="Texture" id=63]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois9.png" type="Texture" id=64]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois10.png" type="Texture" id=65]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois11.png" type="Texture" id=66]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois12.png" type="Texture" id=67]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois13.png" type="Texture" id=68]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois14.png" type="Texture" id=69]
+[ext_resource path="res://Assets/Logo/Thirsty_Bois15.png" type="Texture" id=70]
+[ext_resource path="res://Scenes/Levels/Logo.gd" type="Script" id=71]
 
 [sub_resource type="SpriteFrames" id=6]
 
@@ -151,13 +152,13 @@ animations = [ {
 [sub_resource type="SpriteFrames" id=5]
 
 animations = [ {
-"frames": [ ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 55 ) ],
+"frames": [ ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 56 ) ],
 "loop": false,
 "name": "default",
 "speed": 15.0
 } ]
 
-[node name="binderino" type="Node2D"]
+[node name="binderino" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
@@ -340,13 +341,19 @@ texture = ExtResource( 53 )
 position = Vector2( 789.608, 346.532 )
 texture = ExtResource( 54 )
 
-[node name="Logo" type="AnimatedSprite" parent="." index="24"]
+[node name="slash" parent="." index="24" instance=ExtResource( 55 )]
+
+position = Vector2( 1101.02, 450 )
+scale = Vector2( 2, 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Logo" type="AnimatedSprite" parent="." index="25"]
 
 position = Vector2( 1065.58, 85.1793 )
 scale = Vector2( 4, 4 )
 frames = SubResource( 5 )
 animation = "default"
-script = ExtResource( 70 )
+script = ExtResource( 71 )
 _sections_unfolded = [ "Transform" ]
 
 

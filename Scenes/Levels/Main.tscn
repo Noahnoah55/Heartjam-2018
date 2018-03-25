@@ -1,11 +1,13 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scenes/Levels/Main.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Levels/LevelSelect.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Levels/Actual Levels/Saloon.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/Levels/Actual Levels/Saloon2.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/Levels/Actual Levels/Saloon3.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Scenes/Levels/Binderino.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/GameParts/P1.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/GameParts/P2.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/Levels/Binderino.tscn" type="PackedScene" id=8]
 
 [node name="Camera" type="Node2D"]
 
@@ -14,10 +16,10 @@ LevelSelect = ExtResource( 2 )
 Level1 = ExtResource( 3 )
 Level2 = ExtResource( 4 )
 Level3 = ExtResource( 5 )
-P1Win = null
-P2Win = null
+P1Win = ExtResource( 6 )
+P2Win = ExtResource( 7 )
 
-[node name="binderino" parent="." index="0" instance=ExtResource( 6 )]
+[node name="binderino" parent="." index="0" instance=ExtResource( 8 )]
 
 [node name="Label" type="Label" parent="." index="1"]
 
