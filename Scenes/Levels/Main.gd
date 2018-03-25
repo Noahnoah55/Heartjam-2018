@@ -47,16 +47,27 @@ func _on_LevelSelect_Selected(level):
 		L1.queue_free()
 		L2.queue_free()
 
-func restartgame():
-	pass
-
-func _p1win():
+func clear_children():
 	var children = get_children()
 	for i in children:
 		i.queue_free()
 	
 
+func _p1win():
+	clear_children()
+	var Win = P1Win.instance()
+	add_child(Win)
+	
+
 func _p2win():
-	var children = get_children()
-	for i in children:
-		i.queue_free()
+	clear_children()
+	var Win = P2Win.instance()
+	add_child(Win)
+
+
+func _restart():
+	clear_children()
+	var LSelect = LevelSelect.instance()
+	add_child(LSelect)
+	$binderino.queue_free()
+	$LevelSelect.connect('levelpicked',self,'_on_LevelSelect_Selected')
