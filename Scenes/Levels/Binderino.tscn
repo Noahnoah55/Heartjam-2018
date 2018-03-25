@@ -1,15 +1,27 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Scenes/Levels/Binderino.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Menu/Players/player1.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Menu/Players/player2.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Sprites/JMP.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Sprites/FIRE.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Sprites/LEFT.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Sprites/DOWN.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Sprites/UP.png" type="Texture" id=6]
 [ext_resource path="res://Assets/Sprites/RIGHT.png" type="Texture" id=7]
-[ext_resource path="res://Assets/Sprites/LEFT.png" type="Texture" id=8]
-[ext_resource path="res://Assets/Sprites/DOWN.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Sprites/JMP.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Sprites/FIRE.png" type="Texture" id=9]
 [ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Menu/Controller/Controller.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Sprites/key W.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Sprites/key A.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Sprites/key S.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Sprites/key D.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Sprites/key E.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Sprites/key Space.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Sprites/key Down.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Sprites/key UP.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Sprites/key LEFT.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Sprites/key RIGHT.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Sprites/keycomma.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Sprites/keyperiod.png" type="Texture" id=22]
 
 [sub_resource type="StreamTexture" id=1]
 
@@ -50,12 +62,12 @@ animations = [ {
 animations = [ {
 "frames": [ ExtResource( 4 ) ],
 "loop": true,
-"name": "ui_jump",
+"name": "ui_left",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 5 ) ],
 "loop": true,
-"name": "ui_fire",
+"name": "ui_down",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 6 ) ],
@@ -70,16 +82,16 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 8 ) ],
 "loop": true,
-"name": "ui_left",
+"name": "ui_jump",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 9 ) ],
 "loop": true,
-"name": "ui_down",
+"name": "ui_fire",
 "speed": 5.0
 } ]
 
-[node name="binderino" type="Node2D" index="0"]
+[node name="binderino" type="Node2D"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
@@ -162,5 +174,65 @@ position = Vector2( 789.953, 44.5585 )
 scale = Vector2( 4, 4 )
 texture = ExtResource( 10 )
 _sections_unfolded = [ "Transform" ]
+
+[node name="key W" type="Sprite" parent="." index="13"]
+
+position = Vector2( 307.419, 138.075 )
+texture = ExtResource( 11 )
+
+[node name="key A" type="Sprite" parent="key W" index="0"]
+
+position = Vector2( 2.72073, 213.579 )
+texture = ExtResource( 12 )
+
+[node name="key S" type="Sprite" parent="key W" index="1"]
+
+position = Vector2( 1.36035, 116.992 )
+texture = ExtResource( 13 )
+
+[node name="key D" type="Sprite" parent="key W" index="2"]
+
+position = Vector2( 0, 312.886 )
+texture = ExtResource( 14 )
+
+[node name="key E" type="Sprite" parent="." index="14"]
+
+position = Vector2( 308.78, 561.151 )
+texture = ExtResource( 15 )
+
+[node name="key Space" type="Sprite" parent="." index="15"]
+
+position = Vector2( 304.699, 663.179 )
+texture = ExtResource( 16 )
+
+[node name="key Down" type="Sprite" parent="." index="16"]
+
+position = Vector2( 559.089, 246.905 )
+texture = ExtResource( 17 )
+
+[node name="key UP" type="Sprite" parent="." index="17"]
+
+position = Vector2( 565.891, 138.075 )
+texture = ExtResource( 18 )
+
+[node name="key LEFT" type="Sprite" parent="." index="18"]
+
+position = Vector2( 561.809, 344.852 )
+texture = ExtResource( 19 )
+
+[node name="key RIGHT" type="Sprite" parent="." index="19"]
+
+position = Vector2( 559.089, 442.799 )
+texture = ExtResource( 20 )
+
+[node name="keycomma" type="Sprite" parent="." index="20"]
+
+position = Vector2( 557.728, 543.466 )
+texture = ExtResource( 21 )
+
+[node name="keyperiod" type="Sprite" parent="." index="21"]
+
+position = Vector2( 556.368, 653.657 )
+texture = ExtResource( 22 )
 
 

@@ -4,6 +4,8 @@ export (PackedScene) var LevelSelect
 export (PackedScene) var Level1
 export (PackedScene) var Level2
 export (PackedScene) var Level3
+export (PackedScene) var P1Win
+export (PackedScene) var P2Win
 var projectResolution = 0
 var d
 # class member variables go here, for example:
@@ -27,6 +29,7 @@ func _on_binderino_done():
 	$LevelSelect.connect('levelpicked',self,'_on_LevelSelect_Selected')
 
 func _on_LevelSelect_Selected(level):
+	currentlevel = level
 	$LevelSelect.queue_free()
 	var L1 = Level1.instance()
 	var L2 = Level2.instance()
@@ -43,3 +46,17 @@ func _on_LevelSelect_Selected(level):
 		add_child(L3)
 		L1.queue_free()
 		L2.queue_free()
+
+func restartgame():
+	pass
+
+func _p1win():
+	var children = get_children()
+	for i in children:
+		i.queue_free()
+	
+
+func _p2win():
+	var children = get_children()
+	for i in children:
+		i.queue_free()
