@@ -2,25 +2,18 @@
 
 [ext_resource path="res://Scenes/Levels/Actual Levels/TestLevel.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Tiles/SaloonTileset.tres" type="TileSet" id=2]
-<<<<<<< HEAD
-[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Table/Table.png" type="Texture" id=3]
-[ext_resource path="res://Scenes/GameParts/Player.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Scenes/GameParts/BigBottle.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Scenes/GameParts/SmallBottle.tscn" type="PackedScene" id=6]
-=======
-[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Barrel/Barrel.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Chair/FrontFacingEdit.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Table/Table.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Chair/Left Facing/LeftFacingChair.png" type="Texture" id=6]
-[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Chair/Right Facing/RightFacingChair.png" type="Texture" id=7]
-[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Bottles/Alchohol/SmallBottle.png" type="Texture" id=8]
-[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Bottles/Alchohol/BigBottle.png" type="Texture" id=9]
-[ext_resource path="res://Scenes/GameParts/Player.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Scenes/GameParts/BigBottle.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Scenes/GameParts/SmallBottle.tscn" type="PackedScene" id=12]
->>>>>>> f9140fb5cef60bad66be71c96fb1bfeeab088766
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Chair/FrontFacingEdit.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Table/Table.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Chair/Left Facing/LeftFacingChair.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Chair/Right Facing/RightFacingChair.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Bottles/Alchohol/SmallBottle.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Bottles/Alchohol/BigBottle.png" type="Texture" id=8]
+[ext_resource path="res://Scenes/GameParts/BigBottle.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/GameParts/SmallBottle.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/GameParts/Player.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Barrel/Barrel.png" type="Texture" id=12]
 
-[node name="Level" type="Node2D"]
+[node name="Level" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 gravity = 2000
@@ -55,126 +48,126 @@ format = 1
 tile_data = PoolIntArray( 327690, 4, 0, 327691, 4, 0, 327692, 4, 0, 327693, 4, 0, 327694, 4, 0, 327695, 2, 0, 327696, 2, 0, 327697, 2, 0, 327698, 4, 0, 327699, 4, 0, 327700, 4, 0, 327701, 4, 0, 327702, 4, 0, 393226, 2, 0, 393227, 2, 0, 393228, 2, 0, 393229, 2, 0, 393230, 2, 0, 393231, 2, 0, 393232, 2, 0, 393233, 2, 0, 393234, 2, 0, 393235, 2, 0, 393236, 2, 0, 393237, 2, 0, 393238, 2, 0, 458762, 2, 0, 458763, 2, 0, 458764, 2, 0, 458765, 2, 0, 458766, 2, 0, 458767, 2, 0, 458768, 2, 0, 458769, 2, 0, 458770, 2, 0, 458771, 2, 0, 458772, 2, 0, 458773, 2, 0, 458774, 2, 0, 524298, 2, 0, 524299, 2, 0, 524300, 2, 0, 524301, 2, 0, 524302, 2, 0, 524303, 2, 0, 524304, 2, 0, 524305, 2, 0, 524306, 2, 0, 524307, 2, 0, 524308, 2, 0, 524309, 2, 0, 524310, 2, 0, 589834, 4, 0, 589835, 4, 0, 589836, 2, 0, 589837, 2, 0, 589838, 2, 0, 589839, 2, 0, 589840, 2, 0, 589841, 2, 0, 589842, 2, 0, 589843, 2, 0, 589844, 2, 0, 589845, 4, 0, 589846, 4, 0, 655370, 1, 0, 655371, 1, 0, 655372, 6, 0, 655373, 6, 0, 655374, 6, 0, 655375, 1, 0, 655376, 1, 0, 655377, 1, 0, 655378, 6, 0, 655379, 6, 0, 655380, 6, 0, 655381, 1, 0, 655382, 1, 0, 720906, 1, 0, 720907, 1, 0, 720911, 1, 0, 720912, 1, 0, 720913, 1, 0, 720917, 1, 0, 720918, 1, 0, 786442, 3, 0, 786443, 3, 0, 786447, 1, 0, 786448, 1, 0, 786449, 1, 0, 786453, 3, 0, 786454, 3, 0, 851977, 4, 0, 851978, 4, 0, 851979, 4, 0, 851983, 1, 0, 851984, 1, 0, 851985, 1, 0, 851989, 4, 0, 851990, 4, 0, 851991, 4, 0, 917513, 1, 0, 917514, 1, 0, 917515, 1, 0, 917518, 6, 0, 917519, 1, 0, 917520, 1, 0, 917521, 1, 0, 917522, 6, 0, 917525, 1, 0, 917526, 1, 0, 917527, 1, 0, 983049, 1, 0, 983050, 1, 0, 983051, 1, 0, 983055, 1, 0, 983056, 1, 0, 983057, 1, 0, 983061, 1, 0, 983062, 1, 0, 983063, 1, 0, 1048585, 3, 0, 1048586, 3, 0, 1048587, 3, 0, 1048591, 3, 0, 1048592, 3, 0, 1048593, 3, 0, 1048597, 3, 0, 1048598, 3, 0, 1048599, 3, 0, 1114117, 4, 0, 1114118, 4, 0, 1114119, 4, 0, 1114120, 4, 0, 1114121, 4, 0, 1114122, 4, 0, 1114123, 4, 0, 1114124, 4, 0, 1114125, 4, 0, 1114126, 4, 0, 1114127, 4, 0, 1114128, 4, 0, 1114129, 4, 0, 1114130, 4, 0, 1114131, 4, 0, 1114132, 4, 0, 1114133, 4, 0, 1114134, 4, 0, 1114135, 4, 0, 1114136, 4, 0, 1114137, 4, 0, 1114138, 4, 0, 1114139, 4, 0 )
 _sections_unfolded = [ "Cell" ]
 
-[node name="Barrel" type="Sprite" parent="TileMap" index="0"]
-
-position = Vector2( 316.437, 390.28 )
-texture = ExtResource( 3 )
-
-[node name="Barrel2" type="Sprite" parent="TileMap" index="1"]
-
-position = Vector2( 736.558, 390.637 )
-texture = ExtResource( 3 )
-
-[node name="FrontFacingEdit" type="Sprite" parent="TileMap" index="2"]
+[node name="FrontFacingEdit" type="Sprite" parent="TileMap" index="0"]
 
 position = Vector2( 433.452, 515.208 )
-texture = ExtResource( 4 )
+texture = ExtResource( 3 )
 
-[node name="Table" type="Sprite" parent="TileMap" index="3"]
+[node name="Table" type="Sprite" parent="TileMap" index="1"]
 
 position = Vector2( 431.755, 523.249 )
-texture = ExtResource( 5 )
-
-[node name="LeftFacingChair" type="Sprite" parent="TileMap" index="4"]
-
-position = Vector2( 476.905, 515.306 )
-texture = ExtResource( 6 )
-
-[node name="RightFacingChair" type="Sprite" parent="TileMap" index="5"]
-
-position = Vector2( 384.636, 515.598 )
-texture = ExtResource( 7 )
-
-[node name="Table2" type="Sprite" parent="TileMap" index="6"]
-
-position = Vector2( 623.754, 523.214 )
-texture = ExtResource( 5 )
-
-[node name="FrontFacingEdit2" type="Sprite" parent="TileMap" index="7"]
-
-position = Vector2( 624.545, 515.572 )
 texture = ExtResource( 4 )
 
-[node name="LeftFacingChair2" type="Sprite" parent="TileMap" index="8"]
+[node name="LeftFacingChair" type="Sprite" parent="TileMap" index="2"]
 
-position = Vector2( 669.386, 516.242 )
+position = Vector2( 476.905, 515.306 )
+texture = ExtResource( 5 )
+
+[node name="RightFacingChair" type="Sprite" parent="TileMap" index="3"]
+
+position = Vector2( 384.636, 515.598 )
 texture = ExtResource( 6 )
 
-[node name="RightFacingChair2" type="Sprite" parent="TileMap" index="9"]
+[node name="Table2" type="Sprite" parent="TileMap" index="4"]
+
+position = Vector2( 623.754, 523.214 )
+texture = ExtResource( 4 )
+
+[node name="FrontFacingEdit2" type="Sprite" parent="TileMap" index="5"]
+
+position = Vector2( 624.545, 515.572 )
+texture = ExtResource( 3 )
+
+[node name="LeftFacingChair2" type="Sprite" parent="TileMap" index="6"]
+
+position = Vector2( 669.386, 516.242 )
+texture = ExtResource( 5 )
+
+[node name="RightFacingChair2" type="Sprite" parent="TileMap" index="7"]
 
 position = Vector2( 579.351, 515.718 )
-texture = ExtResource( 7 )
+texture = ExtResource( 6 )
 
-[node name="Barrel3" type="Sprite" parent="TileMap" index="10"]
-
-position = Vector2( 351.511, 260.974 )
-texture = ExtResource( 3 )
-
-[node name="Barrel4" type="Sprite" parent="TileMap" index="11"]
-
-position = Vector2( 702.886, 261.709 )
-texture = ExtResource( 3 )
-
-[node name="Barrel5" type="Sprite" parent="TileMap" index="12"]
-
-position = Vector2( 446.066, 134.05 )
-texture = ExtResource( 3 )
-
-[node name="Barrel6" type="Sprite" parent="TileMap" index="13"]
-
-position = Vector2( 606.524, 134.864 )
-texture = ExtResource( 3 )
-
-[node name="SmallBottle" type="Sprite" parent="TileMap" index="14"]
+[node name="SmallBottle" type="Sprite" parent="TileMap" index="8"]
 
 position = Vector2( 418.248, 499.967 )
-texture = ExtResource( 8 )
+texture = ExtResource( 7 )
 
-[node name="BigBottle" type="Sprite" parent="TileMap" index="15"]
+[node name="BigBottle" type="Sprite" parent="TileMap" index="9"]
 
 position = Vector2( 606.735, 499.977 )
-texture = ExtResource( 9 )
-
-[node name="SmallBottle2" type="Sprite" parent="TileMap" index="16"]
-
-position = Vector2( 642.046, 500.241 )
 texture = ExtResource( 8 )
 
-[node name="Player" parent="." index="1" instance=ExtResource( 10 )]
+[node name="SmallBottle2" type="Sprite" parent="TileMap" index="10"]
+
+position = Vector2( 642.046, 500.241 )
+texture = ExtResource( 7 )
+
+[node name="BigBottle" parent="." index="1" instance=ExtResource( 9 )]
+
+position = Vector2( 858.05, 596.452 )
+
+[node name="BigBottle3" parent="." index="2" instance=ExtResource( 9 )]
+
+position = Vector2( 530.814, 215.423 )
+
+[node name="BigBottle4" parent="." index="3" instance=ExtResource( 9 )]
+
+position = Vector2( 791.203, 217.639 )
+
+[node name="BigBottle2" parent="." index="4" instance=ExtResource( 9 )]
+
+position = Vector2( 472.721, 593.515 )
+
+[node name="Small" parent="." index="5" instance=ExtResource( 10 )]
+
+position = Vector2( 664.967, 595.685 )
+
+[node name="Small2" parent="." index="6" instance=ExtResource( 10 )]
+
+position = Vector2( 566.351, 376.294 )
+
+[node name="Small3" parent="." index="7" instance=ExtResource( 10 )]
+
+position = Vector2( 759.15, 377.402 )
+
+[node name="Player" parent="." index="8" instance=ExtResource( 11 )]
 
 position = Vector2( 377.937, 585.832 )
 
-[node name="Player2" parent="." index="2" instance=ExtResource( 10 )]
+[node name="Player2" parent="." index="9" instance=ExtResource( 11 )]
 
 position = Vector2( 936.985, 586.078 )
 playernumber = "2"
 
-[node name="BigBottle" parent="." index="3" instance=ExtResource( 11 )]
+[node name="Barrel" type="Sprite" parent="." index="10"]
 
-position = Vector2( 858.05, 596.452 )
+position = Vector2( 452.667, 478.954 )
+texture = ExtResource( 12 )
 
-[node name="BigBottle3" parent="." index="4" instance=ExtResource( 11 )]
+[node name="Barrel2" type="Sprite" parent="." index="11"]
 
-position = Vector2( 530.814, 215.423 )
+position = Vector2( 872.788, 479.311 )
+texture = ExtResource( 12 )
 
-[node name="BigBottle4" parent="." index="5" instance=ExtResource( 11 )]
+[node name="Barrel3" type="Sprite" parent="." index="12"]
 
-position = Vector2( 791.203, 217.639 )
+position = Vector2( 487.74, 349.648 )
+texture = ExtResource( 12 )
 
-[node name="BigBottle2" parent="." index="6" instance=ExtResource( 11 )]
+[node name="Barrel4" type="Sprite" parent="." index="13"]
 
-position = Vector2( 472.721, 593.515 )
+position = Vector2( 839.116, 350.383 )
+texture = ExtResource( 12 )
 
-[node name="Small" parent="." index="7" instance=ExtResource( 12 )]
+[node name="Barrel5" type="Sprite" parent="." index="14"]
 
-position = Vector2( 664.967, 595.685 )
+position = Vector2( 582.296, 222.724 )
+texture = ExtResource( 12 )
 
-[node name="Small2" parent="." index="8" instance=ExtResource( 12 )]
+[node name="Barrel6" type="Sprite" parent="." index="15"]
 
-position = Vector2( 566.351, 376.294 )
-
-[node name="Small3" parent="." index="9" instance=ExtResource( 12 )]
-
-position = Vector2( 759.15, 377.402 )
+position = Vector2( 742.754, 223.538 )
+texture = ExtResource( 12 )
 
 
