@@ -14,9 +14,18 @@ script = ExtResource( 1 )
 LevelSelect = ExtResource( 2 )
 Level1 = ExtResource( 3 )
 Level2 = ExtResource( 4 )
+<<<<<<< HEAD
+Level3 = ExtResource( 5 )
+=======
 Level3 = ExtResource( 3 )
+<<<<<<< HEAD
 P1Win = ExtResource( 5 )
 P2Win = ExtResource( 6 )
+=======
+>>>>>>> 65db383195656d381baf9388c91bc574e617f75a
+P1Win = null
+P2Win = null
+>>>>>>> 6dd99b22bf930d1267b6f5340cc3fd07276d0a49
 
 [node name="binderino" parent="." index="0" instance=ExtResource( 7 )]
 
