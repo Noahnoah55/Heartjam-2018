@@ -2,14 +2,14 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Main_Men6.png-1b6dfbcc10e0b0558dc8efe54e74ff30.stex"
+path="res://.import/Main_Men6.png-0c01b0507bb3d951a9ba943f6da26b39.stex"
 
 [deps]
 
-source_file="res://Assets/Backgrounds/Main_Men6.png"
+source_file="res://Assets/Backgrounds/MainMenu/Main_Men6.png"
 source_md5="b9b50024220abafbda7b445ed4a2eab9"
 
-dest_files=[ "res://.import/Main_Men6.png-1b6dfbcc10e0b0558dc8efe54e74ff30.stex" ]
+dest_files=[ "res://.import/Main_Men6.png-0c01b0507bb3d951a9ba943f6da26b39.stex" ]
 dest_md5="0d74af126325bb8602e61b5c1a5c76c0"
 
 [params]
