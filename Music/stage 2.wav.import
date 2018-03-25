@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/stage 2.wav-cd721112392221733ecdae29e9c5f777.sample"
+
+[deps]
+
+source_file="res://Music/stage 2.wav"
+source_md5="96de1285d2350645954bc1cbc5fc398f"
+
+dest_files=[ "res://.import/stage 2.wav-cd721112392221733ecdae29e9c5f777.sample" ]
+dest_md5="0b431490d51737c07bdd4e00197aac01"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
