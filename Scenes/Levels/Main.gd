@@ -27,11 +27,19 @@ func _on_binderino_done():
 	$LevelSelect.connect('levelpicked',self,'_on_LevelSelect_Selected')
 
 func _on_LevelSelect_Selected(level):
-	$Label.text = String(level)
 	$LevelSelect.queue_free()
+	var L1 = Level1.instance()
+	var L2 = Level2.instance()
+	var L3 = Level3.instance()
 	if level == 1:
-		var LoadLevel = Level1
+		add_child(L1)
+		L2.queue_free()
+		L3.queue_free()
 	elif level == 2:
-		var LoadLevel = Level2
+		add_child(L2)
+		L3.queue_free()
+		L1.queue_free()
 	elif level == 3:
-		var LoadLevel = Level3
+		add_child(L3)
+		L1.queue_free()
+		L2.queue_free()
