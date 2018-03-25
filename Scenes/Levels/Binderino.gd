@@ -3,9 +3,6 @@ var keys = {1:'ui_up',2:'ui_down',3:'ui_left',4:'ui_right',5:'ui_jump',6:'ui_fir
 var currentplayer = 1
 var playercount 
 var currentkey = 1
-# class member variables go here, for example:
-# var a = 2
-# var b = "textvar"
 
 func _ready():
 	set_process_input(true)
@@ -15,7 +12,7 @@ func _input(event):
 		bindkey(currentplayer, event, keys[currentkey])
 		currentkey += 1
 		if currentkey == 7:
-			currentkey = 0
+			currentkey = 1
 			currentplayer += 1
 
 func bindkey(playernumber, key, event):
@@ -27,4 +24,4 @@ func bindkey(playernumber, key, event):
 
 func _process(delta):
 	$AnimatedSprite.play(keys[currentkey])
-	$P1.play(keys[currentkey])
+	$P1.play('P'+String(currentplayer))

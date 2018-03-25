@@ -77,16 +77,78 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="P1" type="AnimatedSprite" parent="." index="0"]
 
-position = Vector2( 669.628, 149.057 )
-scale = Vector2( 2, 2 )
+position = Vector2( 289.812, 46.59 )
 frames = SubResource( 1 )
 animation = "P1"
 _sections_unfolded = [ "Transform" ]
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="." index="1"]
+[node name="P2" type="AnimatedSprite" parent="." index="1"]
 
-position = Vector2( 684.881, 471.625 )
+position = Vector2( 494.259, 45.8568 )
+frames = SubResource( 1 )
+animation = "P2"
+_sections_unfolded = [ "Transform" ]
+
+[node name="P3" type="AnimatedSprite" parent="." index="2"]
+
+position = Vector2( 679.649, 51.1972 )
+frames = SubResource( 1 )
+animation = "P3"
+_sections_unfolded = [ "Transform" ]
+
+[node name="P4" type="AnimatedSprite" parent="." index="3"]
+
+position = Vector2( 861.699, 46.5164 )
+frames = SubResource( 1 )
+animation = "P4"
+_sections_unfolded = [ "Transform" ]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="." index="4"]
+
+position = Vector2( 76.9358, 157.631 )
+scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 2 )
 animation = "ui_up"
+_sections_unfolded = [ "Transform" ]
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="." index="5"]
+
+position = Vector2( 81.9464, 259.512 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 2 )
+animation = "ui_down"
+_sections_unfolded = [ "Transform" ]
+
+[node name="AnimatedSprite3" type="AnimatedSprite" parent="." index="6"]
+
+position = Vector2( 81.9464, 361.393 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 2 )
+animation = "ui_left"
+_sections_unfolded = [ "Transform" ]
+
+[node name="AnimatedSprite4" type="AnimatedSprite" parent="." index="7"]
+
+position = Vector2( 86.9569, 468.284 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 2 )
+animation = "ui_right"
+_sections_unfolded = [ "Transform" ]
+
+[node name="AnimatedSprite5" type="AnimatedSprite" parent="." index="8"]
+
+position = Vector2( 90.2973, 580.186 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 2 )
+animation = "ui_fire"
+_sections_unfolded = [ "Transform" ]
+
+[node name="AnimatedSprite6" type="AnimatedSprite" parent="." index="9"]
+
+position = Vector2( 90.2973, 668.706 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 2 )
+animation = "ui_jump"
+_sections_unfolded = [ "Transform" ]
 
 
