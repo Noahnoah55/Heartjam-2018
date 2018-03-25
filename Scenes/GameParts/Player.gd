@@ -30,6 +30,7 @@ var stun
 export var playernumber = '1'
 var firing = 0
 var jumping = 0
+signal death
 
 func _ready():
 	level = get_node('/root/Camera/Level')

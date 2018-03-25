@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/key W.png-f65c0ab4e6d21dce8413ca84f213bf2f.stex"
+
+[deps]
+
+source_file="res://Assets/Sprites/key W.png"
+source_md5="d88b4f90b4818b1222ad76d6f4b1c3bd"
+
+dest_files=[ "res://.import/key W.png-f65c0ab4e6d21dce8413ca84f213bf2f.stex" ]
+dest_md5="13f0ae5db7cffde5005b310882b1574e"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

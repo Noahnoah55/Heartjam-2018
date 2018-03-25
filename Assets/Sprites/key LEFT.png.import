@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/key LEFT.png-f0f3ef186087fb909f18fff96b21b6ab.stex"
+
+[deps]
+
+source_file="res://Assets/Sprites/key LEFT.png"
+source_md5="dbfce0486bbe061269dc226d2f0819e6"
+
+dest_files=[ "res://.import/key LEFT.png-f0f3ef186087fb909f18fff96b21b6ab.stex" ]
+dest_md5="4d352453984b8c50b3a3c2dbd455dd39"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

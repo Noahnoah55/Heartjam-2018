@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/key RIGHT.png-172a7ffb573d2c69516e6f5f11e7e271.stex"
+
+[deps]
+
+source_file="res://Assets/Sprites/key RIGHT.png"
+source_md5="94e5acf81e4aaa7d2ed9e3b11a71013c"
+
+dest_files=[ "res://.import/key RIGHT.png-172a7ffb573d2c69516e6f5f11e7e271.stex" ]
+dest_md5="16139c20995b941b561cfe60c348c409"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
