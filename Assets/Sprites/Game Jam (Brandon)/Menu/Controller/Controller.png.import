@@ -10,7 +10,7 @@ source_file="res://Assets/Sprites/Game Jam (Brandon)/Menu/Controller/Controller.
 source_md5="f8cc3eaef539143c12cd2e0ec6950e5b"
 
 dest_files=[ "res://.import/Controller.png-1ce02f47ac53b5561d90384335c26b56.stex" ]
-dest_md5="b0ed7eb449e5c5302f52b9e310e498e0"
+dest_md5="a53d2333f942fdb2ef37505334046d50"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/player4.png-dd1a39a19f83be8516cc5c411d4897ca.stex"
+path="res://.import/LevelSelectGrey.png-1692fe7debdbb5b9233b7e6ffaf1f552.stex"
 
 [deps]
 
-source_file="res://Assets/Sprites/Game Jam (Brandon)/Menu/Players/player4.png"
-source_md5="5f8f7e940f7f3b9846b0dbdcfb1c5947"
+source_file="res://Assets/Sprites/LevelSelectGrey.png"
+source_md5="9fb300b72e5916540ce3a2ced41627fc"
 
-dest_files=[ "res://.import/player4.png-dd1a39a19f83be8516cc5c411d4897ca.stex" ]
-dest_md5="b897264299af7e64e6ae79b4ac0f0016"
+dest_files=[ "res://.import/LevelSelectGrey.png-1692fe7debdbb5b9233b7e6ffaf1f552.stex" ]
+dest_md5="7a40e0a3aae1e572f8bf3b6fdd250ffc"
 
 [params]
 
