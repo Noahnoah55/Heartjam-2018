@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/player4.png-dd1a39a19f83be8516cc5c411d4897ca.stex"
+
+[deps]
+
+source_file="res://Assets/Sprites/Game Jam (Brandon)/Menu/Players/player4.png"
+source_md5="5f8f7e940f7f3b9846b0dbdcfb1c5947"
+
+dest_files=[ "res://.import/player4.png-dd1a39a19f83be8516cc5c411d4897ca.stex" ]
+dest_md5="6de2a68d4d8d6705fb83a0e1716a184e"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
