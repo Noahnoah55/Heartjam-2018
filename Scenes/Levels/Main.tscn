@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scenes/Levels/Main.gd" type="Script" id=1]
@@ -8,6 +9,28 @@
 [ext_resource path="res://Scenes/GameParts/P1.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenes/GameParts/P2.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/Levels/Binderino.tscn" type="PackedScene" id=8]
+=======
+<<<<<<< HEAD
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scenes/Levels/Main.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Levels/LevelSelect.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Levels/Actual Levels/Saloon.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Levels/Actual Levels/Saloon2.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Levels/Actual Levels/Saloon3.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Levels/Binderino.tscn" type="PackedScene" id=6]
+=======
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Scenes/Levels/Main.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Levels/LevelSelect.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Levels/Actual Levels/TestLevel.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Levels/Actual Levels/Dumblevel1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/GameParts/P1.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/GameParts/P2.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Levels/Binderino.tscn" type="PackedScene" id=7]
+>>>>>>> bc52b1ff6a3536c0900d721e2f75de6888cf4555
+>>>>>>> 158dc6084a117ebbcbf38f43743519a665789f1e
 
 [node name="Camera" type="Node2D"]
 
@@ -16,10 +39,32 @@ LevelSelect = ExtResource( 2 )
 Level1 = ExtResource( 3 )
 Level2 = ExtResource( 4 )
 Level3 = ExtResource( 5 )
+<<<<<<< HEAD
 P1Win = ExtResource( 6 )
 P2Win = ExtResource( 7 )
 
 [node name="binderino" parent="." index="0" instance=ExtResource( 8 )]
+=======
+<<<<<<< HEAD
+=======
+=======
+Level3 = ExtResource( 3 )
+<<<<<<< HEAD
+P1Win = ExtResource( 5 )
+P2Win = ExtResource( 6 )
+=======
+>>>>>>> 65db383195656d381baf9388c91bc574e617f75a
+>>>>>>> bc52b1ff6a3536c0900d721e2f75de6888cf4555
+P1Win = null
+P2Win = null
+>>>>>>> 6dd99b22bf930d1267b6f5340cc3fd07276d0a49
+
+<<<<<<< HEAD
+[node name="binderino" parent="." index="0" instance=ExtResource( 6 )]
+=======
+[node name="binderino" parent="." index="0" instance=ExtResource( 7 )]
+>>>>>>> bc52b1ff6a3536c0900d721e2f75de6888cf4555
+>>>>>>> 158dc6084a117ebbcbf38f43743519a665789f1e
 
 [node name="Label" type="Label" parent="." index="1"]
 
