@@ -61,6 +61,7 @@ func squirt():
 	level.add_child(new_bullet)
 	$ThirstBar.bigdrain()
 	firing = 1
+	jumping = 0
 	$tempchar.play('FIRING')
 
 func die():
@@ -112,6 +113,7 @@ func _process(delta):
 				velocity.y += gravity * delta
 			if Input.is_action_just_pressed(jumpbutton):
 				if jumpsleft > 0:
+					firing = 0
 					velocity.y = -jumpforce
 					$tempchar.play('JUMPING')
 					if isonground == false:
