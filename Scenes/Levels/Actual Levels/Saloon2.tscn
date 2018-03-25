@@ -1,10 +1,15 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Scenes/Levels/Actual Levels/TestLevel.gd" type="Script" id=1]
-[ext_resource path="res://Scenes/GameParts/LevelBlocks.tres" type="TileSet" id=2]
-[ext_resource path="res://Scenes/GameParts/Player.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Scenes/GameParts/BigBottle.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Scenes/GameParts/SmallBottle.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Assets/Tiles/SaloonTileset.tres" type="TileSet" id=2]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Table/Table.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Chair/Left Facing/LeftFacingChair.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Chair/Right Facing/RightFacingChair.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Chair/FrontFacingEdit.png" type="Texture" id=6]
+[ext_resource path="res://Scenes/GameParts/Player.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/GameParts/BigBottle.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/GameParts/SmallBottle.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Barrel/Barrel.png" type="Texture" id=10]
 
 [node name="Level" type="Node2D" index="0"]
 
@@ -21,6 +26,7 @@ drainspeed = 1
 "Block",
 ]]
 
+position = Vector2( 92.6161, -66.4272 )
 mode = 0
 tile_set = ExtResource( 2 )
 cell_size = Vector2( 32, 32 )
@@ -37,24 +43,155 @@ collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray( 1114118, 1, 0, 1114119, 1, 0, 1114120, 1, 0, 1114121, 1, 0, 1114122, 1, 0, 1114123, 1, 0, 1114124, 1, 0, 1114125, 1, 0, 1114126, 1, 0, 1114127, 1, 0, 1114128, 1, 0, 1114129, 1, 0, 1114130, 1, 0, 1114131, 1, 0, 1114132, 1, 0, 1114133, 1, 0, 1114134, 1, 0, 1114135, 1, 0, 1114136, 1, 0, 1114137, 1, 0, 1114138, 1, 0, 1114139, 1, 0, 1114140, 1, 0 )
+tile_data = PoolIntArray( 393229, 4, 0, 393230, 4, 0, 393231, 4, 0, 393232, 4, 0, 393233, 4, 0, 393234, 4, 0, 393235, 4, 0, 458765, 2, 0, 458766, 2, 0, 458767, 2, 0, 458768, 2, 0, 458769, 2, 0, 458770, 2, 0, 458771, 2, 0, 524300, 2, 0, 524301, 2, 0, 524302, 2, 0, 524303, 2, 0, 524304, 2, 0, 524305, 2, 0, 524306, 2, 0, 524307, 2, 0, 524308, 2, 0, 589835, 2, 0, 589836, 2, 0, 589837, 2, 0, 589838, 2, 0, 589839, 2, 0, 589840, 2, 0, 589841, 2, 0, 589842, 2, 0, 589843, 2, 0, 589844, 2, 0, 589845, 2, 0, 655371, 6, 0, 655372, 6, 0, 655373, 6, 0, 655374, 6, 0, 655375, 6, 0, 655376, 4, 0, 655377, 6, 0, 655378, 6, 0, 655379, 6, 0, 655380, 6, 0, 655381, 6, 0, 720898, 4, 0, 720899, 4, 0, 720900, 4, 0, 720912, 4, 0, 720924, 4, 0, 720925, 4, 0, 720926, 4, 0, 786434, 1, 0, 786435, 1, 0, 786436, 1, 0, 786448, 2, 0, 786460, 1, 0, 786461, 1, 0, 786462, 1, 0, 851970, 1, 0, 851971, 1, 0, 851972, 1, 0, 851977, 4, 0, 851978, 4, 0, 851979, 4, 0, 851984, 2, 0, 851989, 4, 0, 851990, 4, 0, 851991, 4, 0, 851996, 1, 0, 851997, 1, 0, 851998, 1, 0, 917506, 3, 0, 917507, 3, 0, 917508, 3, 0, 917513, 1, 0, 917514, 1, 0, 917515, 1, 0, 917520, 2, 0, 917525, 1, 0, 917526, 1, 0, 917527, 1, 0, 917532, 3, 0, 917533, 3, 0, 917534, 3, 0, 983041, 6, 0, 983042, 4, 0, 983043, 4, 0, 983044, 4, 0, 983045, 6, 0, 983049, 1, 0, 983050, 1, 0, 983051, 1, 0, 983056, 4, 0, 983061, 1, 0, 983062, 1, 0, 983063, 1, 0, 983067, 6, 0, 983068, 4, 0, 983069, 4, 0, 983070, 4, 0, 983071, 6, 0, 1048585, 3, 0, 1048586, 3, 0, 1048587, 3, 0, 1048592, 4, 0, 1048597, 3, 0, 1048598, 3, 0, 1048599, 3, 0, 1114120, 4, 0, 1114121, 4, 0, 1114122, 4, 0, 1114123, 4, 0, 1114124, 4, 0, 1114128, 4, 0, 1114132, 4, 0, 1114133, 4, 0, 1114134, 4, 0, 1114135, 4, 0, 1114136, 4, 0, 1179656, 6, 0, 1179657, 1, 0, 1179658, 1, 0, 1179659, 1, 0, 1179660, 6, 0, 1179664, 2, 0, 1179668, 6, 0, 1179669, 1, 0, 1179670, 1, 0, 1179671, 1, 0, 1179672, 6, 0, 1245193, 1, 0, 1245194, 1, 0, 1245195, 1, 0, 1245200, 2, 0, 1245205, 1, 0, 1245206, 1, 0, 1245207, 1, 0, 1310729, 1, 0, 1310730, 1, 0, 1310731, 1, 0, 1310736, 2, 0, 1310741, 1, 0, 1310742, 1, 0, 1310743, 1, 0, 1376265, 3, 0, 1376266, 3, 0, 1376267, 3, 0, 1376271, 6, 0, 1376272, 4, 0, 1376273, 6, 0, 1376277, 3, 0, 1376278, 3, 0, 1376279, 3, 0, 1441800, 6, 0, 1441801, 4, 0, 1441802, 4, 0, 1441803, 4, 0, 1441804, 6, 0, 1441812, 6, 0, 1441813, 4, 0, 1441814, 4, 0, 1441815, 4, 0, 1441816, 6, 0 )
 _sections_unfolded = [ "Cell" ]
 
-[node name="Player" parent="." index="1" instance=ExtResource( 3 )]
+[node name="Table" type="Sprite" parent="TileMap" index="0"]
 
-position = Vector2( 356.675, 469.241 )
+position = Vector2( 336.16, 683.054 )
+texture = ExtResource( 3 )
 
-[node name="Player2" parent="." index="2" instance=ExtResource( 3 )]
+[node name="Table2" type="Sprite" parent="TileMap" index="1"]
 
-position = Vector2( 694.206, 462.588 )
+position = Vector2( 720.816, 683.071 )
+texture = ExtResource( 3 )
+
+[node name="LeftFacingChair" type="Sprite" parent="TileMap" index="2"]
+
+position = Vector2( 766.865, 675.595 )
+texture = ExtResource( 4 )
+
+[node name="RightFacingChair" type="Sprite" parent="TileMap" index="3"]
+
+position = Vector2( 289.361, 675.447 )
+texture = ExtResource( 5 )
+
+[node name="LeftFacingChair2" type="Sprite" parent="TileMap" index="4"]
+
+position = Vector2( 381.655, 675.641 )
+texture = ExtResource( 4 )
+
+[node name="RightFacingChair2" type="Sprite" parent="TileMap" index="5"]
+
+position = Vector2( 674.878, 675.641 )
+texture = ExtResource( 5 )
+
+[node name="Table3" type="Sprite" parent="TileMap" index="6"]
+
+position = Vector2( 110.945, 459.076 )
+texture = ExtResource( 3 )
+
+[node name="FrontFacingEdit" type="Sprite" parent="TileMap" index="7"]
+
+position = Vector2( 111.72, 451.188 )
+texture = ExtResource( 6 )
+
+[node name="LeftFacingChair" type="Sprite" parent="TileMap/FrontFacingEdit" index="0"]
+
+position = Vector2( 42.3212, 0.343384 )
+texture = ExtResource( 4 )
+
+[node name="RightFacingChair" type="Sprite" parent="TileMap/FrontFacingEdit" index="1"]
+
+position = Vector2( -43.6267, 0.343384 )
+texture = ExtResource( 5 )
+
+[node name="Table" type="Sprite" parent="TileMap/FrontFacingEdit/RightFacingChair" index="0"]
+
+position = Vector2( 875.876, 7.66132 )
+texture = ExtResource( 3 )
+
+[node name="FrontFacingEdit" type="Sprite" parent="TileMap/FrontFacingEdit/RightFacingChair" index="1"]
+
+position = Vector2( 876.722, -0.353912 )
+texture = ExtResource( 6 )
+
+[node name="Player" parent="." index="1" instance=ExtResource( 7 )]
+
+position = Vector2( 365.682, 429.241 )
+
+[node name="Player2" parent="." index="2" instance=ExtResource( 7 )]
+
+position = Vector2( 874.498, 429.939 )
 playernumber = "2"
 
-[node name="BigBottle" parent="." index="3" instance=ExtResource( 4 )]
+[node name="BigBottle" parent="." index="3" instance=ExtResource( 8 )]
 
-position = Vector2( 769.794, 503.374 )
+position = Vector2( 812.287, 531.759 )
 
-[node name="Small" parent="." index="4" instance=ExtResource( 5 )]
+[node name="BigBottle3" parent="." index="4" instance=ExtResource( 8 )]
 
-position = Vector2( 276.242, 498.463 )
+position = Vector2( 678.716, 224.006 )
+
+[node name="BigBottle4" parent="." index="5" instance=ExtResource( 8 )]
+
+position = Vector2( 558.683, 222.201 )
+
+[node name="BigBottle2" parent="." index="6" instance=ExtResource( 8 )]
+
+position = Vector2( 427.793, 538.374 )
+
+[node name="Small" parent="." index="7" instance=ExtResource( 9 )]
+
+position = Vector2( 491.192, 442.972 )
+
+[node name="Small3" parent="." index="8" instance=ExtResource( 9 )]
+
+position = Vector2( 622.054, 574.737 )
+
+[node name="Small2" parent="." index="9" instance=ExtResource( 9 )]
+
+position = Vector2( 748.576, 440.528 )
+
+[node name="Small4" parent="." index="10" instance=ExtResource( 9 )]
+
+position = Vector2( 618.616, 95.7722 )
+
+[node name="Small5" parent="." index="11" instance=ExtResource( 9 )]
+
+position = Vector2( 1037.38, 254.613 )
+
+[node name="Small7" parent="." index="12" instance=ExtResource( 9 )]
+
+position = Vector2( 620.421, 380.963 )
+
+[node name="Small6" parent="." index="13" instance=ExtResource( 9 )]
+
+position = Vector2( 203.465, 252.808 )
+
+[node name="Barrel" type="Sprite" parent="." index="14"]
+
+position = Vector2( 507.714, 226.958 )
+texture = ExtResource( 10 )
+
+[node name="Barrel2" type="Sprite" parent="." index="15"]
+
+position = Vector2( 731.044, 226.958 )
+texture = ExtResource( 10 )
+
+[node name="Barrel3" type="Sprite" parent="." index="16"]
+
+position = Vector2( 618.481, 228.155 )
+texture = ExtResource( 10 )
+
+[node name="FrontFacingEdit" type="Sprite" parent="." index="17"]
+
+position = Vector2( 814.449, 608.601 )
+texture = ExtResource( 6 )
+
+[node name="FrontFacingEdit2" type="Sprite" parent="." index="18"]
+
+position = Vector2( 428.479, 608.584 )
+texture = ExtResource( 6 )
+
+[node name="LeftFacingChair" type="Sprite" parent="." index="19"]
+
+position = Vector2( 1081.13, 385.349 )
+texture = ExtResource( 4 )
+
+[node name="RightFacingChair" type="Sprite" parent="." index="20"]
+
+position = Vector2( 992.967, 384.963 )
+texture = ExtResource( 5 )
 
 

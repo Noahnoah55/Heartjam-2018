@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/FrontFacingEdit.png-8281b28d68dcc9cd0c438f09544d2a54.stex"
+
+[deps]
+
+source_file="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Chair/FrontFacingEdit.png"
+source_md5="7ed42f3d208d312ae9315d7563e31d71"
+
+dest_files=[ "res://.import/FrontFacingEdit.png-8281b28d68dcc9cd0c438f09544d2a54.stex" ]
+dest_md5="e1097581e4b12a4f2ec8ac1dbd02503a"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
