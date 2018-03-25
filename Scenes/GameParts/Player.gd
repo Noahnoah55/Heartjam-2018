@@ -92,9 +92,9 @@ func _process(delta):
 				hit()
 		if d[i].is_in_group('Bottle'):
 			if d[i].is_in_group('Big'):
-				$ThirstBar.fillbar(2)
+				$ThirstBar.fillbar(5)
 			if d[i].is_in_group('Small'):
-				$ThirstBar.fillbar(1)
+				$ThirstBar.fillbar(3)
 			d[i].queue_free()
 	
 	#CONTROLS

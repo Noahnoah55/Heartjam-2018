@@ -13,7 +13,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 8, 14 )
+extents = Vector2( 8, 8.73551 )
 
 [sub_resource type="SpriteFrames" id=2]
 
@@ -41,13 +41,14 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 
+position = Vector2( 0, 4 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="AnimatedSprite" parent="." index="1"]
 
 frames = SubResource( 2 )
 animation = "default"
-frame = 1
+frame = 7
 playing = true
 
 
