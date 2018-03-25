@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Scenes/Levels/TestLevel.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Levels/Actual Levels/TestLevel.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/GameParts/LevelBlocks.tres" type="TileSet" id=2]
 [ext_resource path="res://Scenes/GameParts/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/GameParts/BigBottle.tscn" type="PackedScene" id=4]

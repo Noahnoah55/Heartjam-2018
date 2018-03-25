@@ -2,7 +2,7 @@ extends Node2D
 var playercount
 export (PackedScene) var Keybinding
 export (PackedScene) var Level
-var projectResolution=Vector2(Globals.get("display/width"),Globals.get("display/height"))
+var projectResolution = 0
 var d
 # class member variables go here, for example:
 # var a = 2
@@ -11,8 +11,8 @@ var d
 func _ready():
 	# Called every time the node is added to the scene.
 	# Initialization here
-	pass
-
+	projectResolution = get_viewport().get_visible_rect().size
+	scale = Vector2(projectResolution.x / 1280,projectResolution.y / 720)
 func _process(delta):
 	projectResolution.x / 1280
 
