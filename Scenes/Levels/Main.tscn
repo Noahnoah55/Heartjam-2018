@@ -1,16 +1,38 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scenes/Levels/Main.gd" type="Script" id=1]
-[ext_resource path="res://Scenes/Levels/Actual Levels/Dumblevel1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Levels/LevelSelect.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Levels/Binderino.tscn" type="PackedScene" id=3]
 
 [node name="Camera" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
-Keybinding = null
-Level = ExtResource( 2 )
+LevelSelect = ExtResource( 2 )
+Level1 = null
+Level2 = null
+Level3 = null
 
 [node name="binderino" parent="." index="0" instance=ExtResource( 3 )]
+
+[node name="Label" type="Label" parent="." index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 607.0
+margin_top = 373.0
+margin_right = 647.0
+margin_bottom = 387.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
 
 [connection signal="done" from="binderino" to="." method="_on_binderino_done"]
 

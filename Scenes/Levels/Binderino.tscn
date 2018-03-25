@@ -1,26 +1,27 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Scenes/Levels/Binderino.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Sprites/P1.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Sprites/p2.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Sprites/UP.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Sprites/LEFT.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Sprites/DOWN.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Menu/Players/player1.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Menu/Players/player2.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Sprites/JMP.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Sprites/FIRE.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Sprites/UP.png" type="Texture" id=6]
 [ext_resource path="res://Assets/Sprites/RIGHT.png" type="Texture" id=7]
-[ext_resource path="res://Assets/Sprites/JMP.png" type="Texture" id=8]
-[ext_resource path="res://Assets/Sprites/FIRE.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Sprites/LEFT.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Sprites/DOWN.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Menu/Controller/Controller.png" type="Texture" id=10]
 
-[sub_resource type="StreamTexture" id=3]
-
-flags = 4
-load_path = "res://.import/p3.png-ad626275161a50fbe49d264cb3cfabbc.stex"
-
-[sub_resource type="StreamTexture" id=4]
+[sub_resource type="StreamTexture" id=1]
 
 flags = 4
-load_path = "res://.import/p4.png-81c53e8344098d06330352a27f11e43b.stex"
+load_path = ""
 
-[sub_resource type="SpriteFrames" id=1]
+[sub_resource type="StreamTexture" id=2]
+
+flags = 4
+load_path = ""
+
+[sub_resource type="SpriteFrames" id=3]
 
 animations = [ {
 "frames": [ ExtResource( 2 ) ],
@@ -28,38 +29,38 @@ animations = [ {
 "name": "P1",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 3 ) ],
+"frames": [ SubResource( 1 ) ],
 "loop": true,
 "name": "P3",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 4 ) ],
-"loop": true,
-"name": "P4",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 3 ) ],
 "loop": true,
 "name": "P2",
 "speed": 5.0
+}, {
+"frames": [ SubResource( 2 ) ],
+"loop": true,
+"name": "P4",
+"speed": 5.0
 } ]
 
-[sub_resource type="SpriteFrames" id=2]
+[sub_resource type="SpriteFrames" id=4]
 
 animations = [ {
 "frames": [ ExtResource( 4 ) ],
 "loop": true,
-"name": "ui_up",
+"name": "ui_jump",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 5 ) ],
 "loop": true,
-"name": "ui_left",
+"name": "ui_fire",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 6 ) ],
 "loop": true,
-"name": "ui_down",
+"name": "ui_up",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 7 ) ],
@@ -69,31 +70,33 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 8 ) ],
 "loop": true,
-"name": "ui_jump",
+"name": "ui_left",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 9 ) ],
 "loop": true,
-"name": "ui_fire",
+"name": "ui_down",
 "speed": 5.0
 } ]
 
-[node name="binderino" type="Node2D"]
+[node name="binderino" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="P1" type="AnimatedSprite" parent="." index="0"]
 
-position = Vector2( 338.247, 41.5794 )
-frames = SubResource( 1 )
+position = Vector2( 319.07, 51.3604 )
+scale = Vector2( 5, 5 )
+frames = SubResource( 3 )
 animation = "P1"
 _sections_unfolded = [ "Transform" ]
 
 [node name="P2" type="AnimatedSprite" parent="." index="1"]
 
-position = Vector2( 631.214, 40.8462 )
-frames = SubResource( 1 )
+position = Vector2( 555.775, 48.6396 )
+scale = Vector2( 5, 5 )
+frames = SubResource( 3 )
 animation = "P2"
 _sections_unfolded = [ "Transform" ]
 
@@ -101,7 +104,7 @@ _sections_unfolded = [ "Transform" ]
 
 position = Vector2( 73.5952, 142.599 )
 scale = Vector2( 0.5, 0.5 )
-frames = SubResource( 2 )
+frames = SubResource( 4 )
 animation = "ui_up"
 _sections_unfolded = [ "Transform" ]
 
@@ -109,7 +112,7 @@ _sections_unfolded = [ "Transform" ]
 
 position = Vector2( 81.9464, 259.512 )
 scale = Vector2( 0.5, 0.5 )
-frames = SubResource( 2 )
+frames = SubResource( 4 )
 animation = "ui_down"
 _sections_unfolded = [ "Transform" ]
 
@@ -117,7 +120,7 @@ _sections_unfolded = [ "Transform" ]
 
 position = Vector2( 81.9464, 361.393 )
 scale = Vector2( 0.5, 0.5 )
-frames = SubResource( 2 )
+frames = SubResource( 4 )
 animation = "ui_left"
 _sections_unfolded = [ "Transform" ]
 
@@ -125,7 +128,7 @@ _sections_unfolded = [ "Transform" ]
 
 position = Vector2( 86.9569, 468.284 )
 scale = Vector2( 0.5, 0.5 )
-frames = SubResource( 2 )
+frames = SubResource( 4 )
 animation = "ui_right"
 _sections_unfolded = [ "Transform" ]
 
@@ -133,7 +136,7 @@ _sections_unfolded = [ "Transform" ]
 
 position = Vector2( 90.2973, 580.186 )
 scale = Vector2( 0.5, 0.5 )
-frames = SubResource( 2 )
+frames = SubResource( 4 )
 animation = "ui_fire"
 _sections_unfolded = [ "Transform" ]
 
@@ -141,7 +144,7 @@ _sections_unfolded = [ "Transform" ]
 
 position = Vector2( 90.2973, 668.706 )
 scale = Vector2( 0.5, 0.5 )
-frames = SubResource( 2 )
+frames = SubResource( 4 )
 animation = "ui_jump"
 _sections_unfolded = [ "Transform" ]
 
@@ -152,5 +155,12 @@ _sections_unfolded = [ "Transform" ]
 [node name="P3Controls" type="Node2D" parent="." index="10"]
 
 [node name="P4Controls" type="Node2D" parent="." index="11"]
+
+[node name="Controller" type="Sprite" parent="." index="12"]
+
+position = Vector2( 789.953, 44.5585 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 10 )
+_sections_unfolded = [ "Transform" ]
 
 

@@ -10,7 +10,7 @@ source_file="res://Assets/Sprites/Game Jam (Brandon)/Menu/Players/player2.png"
 source_md5="98aa80340f5d2df54860ee8b7b630bcc"
 
 dest_files=[ "res://.import/player2.png-7e24999cc9f464e1b7c56858ecead0b3.stex" ]
-dest_md5="011f156bd895fec02b66fcd83f2d14cd"
+dest_md5="bc3144effcc0d8edf297e8b26cfdd4f3"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
