@@ -56,7 +56,7 @@ func _ready():
 func squirt():
 	var new_bullet = bullet.instance()
 	new_bullet.position = self.position + Vector2(facing.x * 16, facing.y * 16)
-	new_bullet.facing = facing
+	new_bullet.facing.x = lastx
 	new_bullet.add_to_group(playernumber)
 	level.add_child(new_bullet)
 	$ThirstBar.bigdrain()
