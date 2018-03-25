@@ -10,7 +10,7 @@ source_file="res://Assets/Sprites/Pickups/BigBottle/BigBottleAnimation4.png"
 source_md5="257b49163b68507cb5dec0c7ffe5b8c0"
 
 dest_files=[ "res://.import/BigBottleAnimation4.png-76e7843fa3237c05cf87c0da6d3a9194.stex" ]
-dest_md5="d140a2b37097a6628d43f00eb57af438"
+dest_md5="d4e23746a0915dbe241ee6ed62ef8397"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
