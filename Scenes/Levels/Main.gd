@@ -63,11 +63,3 @@ func _p2win():
 	clear_children()
 	var Win = P2Win.instance()
 	add_child(Win)
-
-
-func _restart():
-	clear_children()
-	var LSelect = LevelSelect.instance()
-	add_child(LSelect)
-	$binderino.queue_free()
-	$LevelSelect.connect('levelpicked',self,'_on_LevelSelect_Selected')

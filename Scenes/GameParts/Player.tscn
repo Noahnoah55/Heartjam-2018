@@ -25,7 +25,7 @@ extents = Vector2( 16, 1 )
 custom_solver_bias = 0.0
 extents = Vector2( 17, 40 )
 
-[node name="Player" type="KinematicBody2D" index="0" groups=[
+[node name="Player" type="KinematicBody2D" groups=[
 "Player",
 ]]
 
@@ -349,7 +349,7 @@ max_lines_visible = -1
 [node name="Stuntimer" type="Timer" parent="." index="6"]
 
 process_mode = 1
-wait_time = 2.0
+wait_time = 1.0
 one_shot = false
 autostart = false
 
