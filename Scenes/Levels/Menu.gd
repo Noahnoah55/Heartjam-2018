@@ -24,10 +24,10 @@ func drawplayer():
 func _process(delta):
 #	# Called every frame. Delta is time since last frame.
 #	# Update game logic here.
-	if Input.is_action_just_pressed('menu_up') or Input.is_action_pressed('menu_right'):
+	if Input.is_action_just_pressed('menu_up') or Input.is_action_just_pressed('menu_right'):
 		if playercount < 4:
 			playercount += 1
-	if Input.is_action_just_pressed('menu_down') or Input.is_action_pressed('menu_left'):
+	if Input.is_action_just_pressed('menu_down') or Input.is_action_just_pressed('menu_left'):
 		if playercount >2:
 			playercount -= 1
 	drawplayer()

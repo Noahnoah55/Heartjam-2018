@@ -1,4 +1,4 @@
-extends Node
+extends Node2D
 var playercount
 export (PackedScene) var Keybinding
 export (PackedScene) var Level
@@ -16,6 +16,7 @@ func _process(delta):
 
 func _on_Menu_done():
 	playercount = $Menu.playercount
-	$Menu.queue_free()
 	var binderino = Keybinding.instance()
 	binderino.playercount = playercount
+	add_child(binderino)
+	$Menu.queue_free()
