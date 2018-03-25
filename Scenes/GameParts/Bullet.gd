@@ -23,3 +23,4 @@ func _process(delta):
 		if c[i].is_in_group('Player'):
 			queue_free()
 		if c[i].is_in_group('Block'):
+			queue_free()
