@@ -1,11 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scenes/Levels/Actual Levels/TestLevel.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Tiles/SaloonTileset.tres" type="TileSet" id=2]
-[ext_resource path="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Table/Table.png" type="Texture" id=3]
-[ext_resource path="res://Scenes/GameParts/Player.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Scenes/GameParts/BigBottle.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Scenes/GameParts/SmallBottle.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/GameParts/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/GameParts/BigBottle.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/GameParts/SmallBottle.tscn" type="PackedScene" id=5]
 
 [node name="Level" type="Node2D" index="0"]
 
@@ -22,7 +21,7 @@ drainspeed = 1
 "Block",
 ]]
 
-position = Vector2( -34.8698, -8.80258 )
+position = Vector2( 136.23, 88.6739 )
 mode = 0
 tile_set = ExtResource( 2 )
 cell_size = Vector2( 32, 32 )
@@ -39,29 +38,44 @@ collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray( 851996, 4, 0, 917532, 4, 0, 983068, 4, 0, 1048605, 4, 0, 1114119, 4, 0, 1114120, 4, 0, 1114121, 4, 0, 1114122, 4, 0, 1114123, 4, 0, 1114124, 4, 0, 1114125, 4, 0, 1114126, 4, 0, 1114127, 4, 0, 1114128, 4, 0, 1114129, 4, 0, 1114130, 4, 0, 1114131, 4, 0, 1114132, 4, 0, 1114133, 4, 0, 1114134, 4, 0, 1114135, 4, 0, 1114136, 4, 0, 1114137, 4, 0, 1114141, 4, 0 )
+tile_data = PoolIntArray( 327690, 4, 0, 327691, 4, 0, 327692, 4, 0, 327693, 4, 0, 327694, 4, 0, 327695, 2, 0, 327696, 2, 0, 327697, 2, 0, 327698, 4, 0, 327699, 4, 0, 327700, 4, 0, 327701, 4, 0, 327702, 4, 0, 393226, 2, 0, 393227, 2, 0, 393228, 2, 0, 393229, 2, 0, 393230, 2, 0, 393231, 2, 0, 393232, 2, 0, 393233, 2, 0, 393234, 2, 0, 393235, 2, 0, 393236, 2, 0, 393237, 2, 0, 393238, 2, 0, 458762, 2, 0, 458763, 2, 0, 458764, 2, 0, 458765, 2, 0, 458766, 2, 0, 458767, 2, 0, 458768, 2, 0, 458769, 2, 0, 458770, 2, 0, 458771, 2, 0, 458772, 2, 0, 458773, 2, 0, 458774, 2, 0, 524298, 2, 0, 524299, 2, 0, 524300, 2, 0, 524301, 2, 0, 524302, 2, 0, 524303, 2, 0, 524304, 2, 0, 524305, 2, 0, 524306, 2, 0, 524307, 2, 0, 524308, 2, 0, 524309, 2, 0, 524310, 2, 0, 589834, 4, 0, 589835, 4, 0, 589836, 2, 0, 589837, 2, 0, 589838, 2, 0, 589839, 2, 0, 589840, 2, 0, 589841, 2, 0, 589842, 2, 0, 589843, 2, 0, 589844, 2, 0, 589845, 4, 0, 589846, 4, 0, 655370, 1, 0, 655371, 1, 0, 655372, 6, 0, 655373, 6, 0, 655374, 6, 0, 655375, 1, 0, 655376, 1, 0, 655377, 1, 0, 655378, 6, 0, 655379, 6, 0, 655380, 6, 0, 655381, 1, 0, 655382, 1, 0, 720906, 1, 0, 720907, 1, 0, 720911, 1, 0, 720912, 1, 0, 720913, 1, 0, 720917, 1, 0, 720918, 1, 0, 786442, 3, 0, 786443, 3, 0, 786447, 1, 0, 786448, 1, 0, 786449, 1, 0, 786453, 3, 0, 786454, 3, 0, 851977, 4, 0, 851978, 4, 0, 851979, 4, 0, 851983, 1, 0, 851984, 1, 0, 851985, 1, 0, 851989, 4, 0, 851990, 4, 0, 851991, 4, 0, 917513, 1, 0, 917514, 1, 0, 917515, 1, 0, 917518, 6, 0, 917519, 1, 0, 917520, 1, 0, 917521, 1, 0, 917522, 6, 0, 917525, 1, 0, 917526, 1, 0, 917527, 1, 0, 983049, 1, 0, 983050, 1, 0, 983051, 1, 0, 983055, 1, 0, 983056, 1, 0, 983057, 1, 0, 983061, 1, 0, 983062, 1, 0, 983063, 1, 0, 1048585, 3, 0, 1048586, 3, 0, 1048587, 3, 0, 1048591, 3, 0, 1048592, 3, 0, 1048593, 3, 0, 1048597, 3, 0, 1048598, 3, 0, 1048599, 3, 0, 1114117, 4, 0, 1114118, 4, 0, 1114119, 4, 0, 1114120, 4, 0, 1114121, 4, 0, 1114122, 4, 0, 1114123, 4, 0, 1114124, 4, 0, 1114125, 4, 0, 1114126, 4, 0, 1114127, 4, 0, 1114128, 4, 0, 1114129, 4, 0, 1114130, 4, 0, 1114131, 4, 0, 1114132, 4, 0, 1114133, 4, 0, 1114134, 4, 0, 1114135, 4, 0, 1114136, 4, 0, 1114137, 4, 0, 1114138, 4, 0, 1114139, 4, 0 )
 _sections_unfolded = [ "Cell" ]
 
-[node name="Table" type="Sprite" parent="TileMap" index="0"]
+[node name="Player" parent="." index="1" instance=ExtResource( 3 )]
 
-position = Vector2( 522.279, 522.851 )
-texture = ExtResource( 3 )
+position = Vector2( 377.937, 585.832 )
 
-[node name="Player" parent="." index="1" instance=ExtResource( 4 )]
+[node name="Player2" parent="." index="2" instance=ExtResource( 3 )]
 
-position = Vector2( 356.675, 469.241 )
-
-[node name="Player2" parent="." index="2" instance=ExtResource( 4 )]
-
-position = Vector2( 694.206, 462.588 )
+position = Vector2( 936.985, 586.078 )
 playernumber = "2"
 
-[node name="BigBottle" parent="." index="3" instance=ExtResource( 5 )]
+[node name="BigBottle" parent="." index="3" instance=ExtResource( 4 )]
 
-position = Vector2( 769.794, 503.374 )
+position = Vector2( 858.05, 596.452 )
 
-[node name="Small" parent="." index="4" instance=ExtResource( 6 )]
+[node name="BigBottle3" parent="." index="4" instance=ExtResource( 4 )]
 
-position = Vector2( 276.242, 498.463 )
+position = Vector2( 530.814, 215.423 )
+
+[node name="BigBottle4" parent="." index="5" instance=ExtResource( 4 )]
+
+position = Vector2( 791.203, 217.639 )
+
+[node name="BigBottle2" parent="." index="6" instance=ExtResource( 4 )]
+
+position = Vector2( 472.721, 593.515 )
+
+[node name="Small" parent="." index="7" instance=ExtResource( 5 )]
+
+position = Vector2( 664.967, 595.685 )
+
+[node name="Small2" parent="." index="8" instance=ExtResource( 5 )]
+
+position = Vector2( 566.351, 376.294 )
+
+[node name="Small3" parent="." index="9" instance=ExtResource( 5 )]
+
+position = Vector2( 759.15, 377.402 )
 
 

@@ -1,0 +1,60 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scenes/Levels/Actual Levels/TestLevel.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/GameParts/LevelBlocks.tres" type="TileSet" id=2]
+[ext_resource path="res://Scenes/GameParts/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/GameParts/BigBottle.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/GameParts/SmallBottle.tscn" type="PackedScene" id=5]
+
+[node name="Level" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+gravity = 2000
+jumpbonus = 0.5
+jumpforce = 500
+walkspeed = 300
+aircontrol = 400
+bouncespeed = 400
+drainspeed = 1
+
+[node name="TileMap" type="TileMap" parent="." index="0" groups=[
+"Block",
+]]
+
+mode = 0
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 32, 32 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 1114118, 1, 0, 1114119, 1, 0, 1114120, 1, 0, 1114121, 1, 0, 1114122, 1, 0, 1114123, 1, 0, 1114124, 1, 0, 1114125, 1, 0, 1114126, 1, 0, 1114127, 1, 0, 1114128, 1, 0, 1114129, 1, 0, 1114130, 1, 0, 1114131, 1, 0, 1114132, 1, 0, 1114133, 1, 0, 1114134, 1, 0, 1114135, 1, 0, 1114136, 1, 0, 1114137, 1, 0, 1114138, 1, 0, 1114139, 1, 0, 1114140, 1, 0 )
+_sections_unfolded = [ "Cell" ]
+
+[node name="Player" parent="." index="1" instance=ExtResource( 3 )]
+
+position = Vector2( 356.675, 469.241 )
+
+[node name="Player2" parent="." index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 694.206, 462.588 )
+playernumber = "2"
+
+[node name="BigBottle" parent="." index="3" instance=ExtResource( 4 )]
+
+position = Vector2( 769.794, 503.374 )
+
+[node name="Small" parent="." index="4" instance=ExtResource( 5 )]
+
+position = Vector2( 276.242, 498.463 )
+
+
