@@ -10,7 +10,7 @@ source_file="res://Assets/Tiles/Chandelier.png"
 source_md5="c8e0cdfc5e4421297b464dde4b702d01"
 
 dest_files=[ "res://.import/Chandelier.png-eae738ef81134c2146e00a602bc5d33b.stex" ]
-dest_md5="c829fe8abe0a6bc31485bb255f397da1"
+dest_md5="80e94d8487dfa0e4fe661ff8f48ec2d7"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

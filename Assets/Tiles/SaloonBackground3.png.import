@@ -10,7 +10,7 @@ source_file="res://Assets/Tiles/SaloonBackground3.png"
 source_md5="53911234cd7a81ac25f90c7b92eb5ffa"
 
 dest_files=[ "res://.import/SaloonBackground3.png-6a1d20c5d67277b6ea4aa58c66e66156.stex" ]
-dest_md5="c45ce2652c80efc0534759157616222a"
+dest_md5="3e34c9794555438e1b9d92a31e0e46d0"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

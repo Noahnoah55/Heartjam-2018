@@ -10,7 +10,7 @@ source_file="res://Assets/Tiles/Rope.png"
 source_md5="a935b7fc622a294994912f94b8f6c592"
 
 dest_files=[ "res://.import/Rope.png-66aef6977e771f6881f48bad6a3aab5d.stex" ]
-dest_md5="7e8b29df80ae5b096ccc74d8b0bba496"
+dest_md5="fd24cabee5a4fc4229f918d0ba576e72"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
