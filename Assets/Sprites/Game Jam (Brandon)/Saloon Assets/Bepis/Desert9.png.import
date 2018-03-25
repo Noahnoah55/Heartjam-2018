@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Desert9.png-e5778525a77925fbe1036b6a95cce4f7.stex"
+
+[deps]
+
+source_file="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Bepis/Desert9.png"
+source_md5="061a70a0d4a77028eaf5c5c15dfdb1ce"
+
+dest_files=[ "res://.import/Desert9.png-e5778525a77925fbe1036b6a95cce4f7.stex" ]
+dest_md5="71235cfe6534a764b809fae66ee8176b"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
