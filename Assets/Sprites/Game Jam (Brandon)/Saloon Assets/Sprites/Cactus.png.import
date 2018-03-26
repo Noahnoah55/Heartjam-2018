@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Cactus.png-9b189a6f5766c78e1240b52dfd7ffe7c.stex"
+
+[deps]
+
+source_file="res://Assets/Sprites/Game Jam (Brandon)/Saloon Assets/Sprites/Cactus.png"
+source_md5="df638e23c2f2b3179bc558f0ec5eae6e"
+
+dest_files=[ "res://.import/Cactus.png-9b189a6f5766c78e1240b52dfd7ffe7c.stex" ]
+dest_md5="4e6380396be8ceb0d0353f23d346dc9b"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
